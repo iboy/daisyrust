@@ -2,9 +2,9 @@
 <html lang="en">
 
 
-{% include head.html %}
+{% include head_grid.html %}
 
-	<body class="learning {{page.kind}} {{page.layout}} {{page.kind}}"> <!-- These need to be generated using the meta data -->
+	<body class="archive tax-resource-category term-teach term-1261" style="zoom:1;"> <!-- These need to be generated using the meta data -->
 		<!--
 		types
 	teach (index of all teaching projects)
@@ -17,7 +17,7 @@
 			- Software
 			- Extras
 			- Links: Lessons
-		learning component teach weather-board		individual component view
+		learning compon<article class="content">ent teach weather-board		individual component view
 			
 		learning lessons teach lessons				summary sheet of lessons
 			- List Title with Link: Lesson Plan Link: Student Worksheet
@@ -50,36 +50,41 @@
 		<!--TODO generate the correct body class tags from categories / keywords in the yml or set another template for the worksheets...--> 
 		
 		
-		<div class="container">
+		<div class="container-grid">
 
 {% include header.html %}
 
 			<div class="main">
 
-				<article class="content">
-					<h1>{{ page.title}}</h1>
+		
+					<h2>{{ page.title }}</h2>
 						
 
 					        <h2>Grid Index</h2>
 							
-							
 						
-						{{content}} 
+						
+						
+					<ul class="grid {{ page.kind }}">
+        
+{{ content }}
+					
+			
+
+					</ul>
+					
+					
+						
+					
+
+		
+</div>
+
+<div style="clear:both;"></div>
+</div>
 
 
-					<!-- <nav class="buttons">
-
-		    			<a class="button requirements" href="{{ site.baseurl }}{% link requirements.md %}">What you will need</a>
-		    			<a class="button worksheet" href="{{ site.baseurl }}{% link worksheet.md %}">Get started</a>
-
-					</nav> -->
-
-				</article>
-				
-			</div>
-	</body>
-
-{% include footer.html %}
-
+<!--{% include footer.html %}-->
+</body>
 
 </html>

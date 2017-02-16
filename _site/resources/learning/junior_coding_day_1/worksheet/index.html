@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8" />
+	    <meta name="viewport" content="width=device-width" />
+	    <title>Junior Coding Day 1 - Worksheet</title>
+		<meta charset="utf-8">
+	    <meta name="description" content="" />
+	   <!-- <link rel="icon" type="image/png" href="/wp-content/themes/mind-control/images/favicon.png" />-->
+	    <!-- <link rel="publisher" href="https://plus.google.com/+RaspberryPi" /> -->
+	    <link rel="stylesheet" href="/css/prism.css" />
+	    <link rel="stylesheet" href="/css/main.css" />
+		<!--<link rel="stylesheet" href="/css/mindcontrol.css" />-->
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700">
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100italic,100,300italic,300,400italic,400,500italic,500,700italic,700,900italic,900">
+
+    <script src="/js/prism.js"></script>
+	
+	
+</head>
+
+	<body class="learning worksheet worksheet worksheet"> <!-- These need to be generated using the meta data -->
+		<!--
+		types
+	teach (index of all teaching projects)
+		
+		learning cover teach						summary cover
+			- Reqs
+			- Links: Lessons
+		learning requirements teach requirements	summary of reqs (as a list of links with image)
+			- Hardwarel
+			- Software
+			- Extras
+			- Links: Lessons
+		learning component teach weather-board		individual component view
+			
+		learning lessons teach lessons				summary sheet of lessons
+			- List Title with Link: Lesson Plan Link: Student Worksheet
+			
+		learning plan teach lesson
+			- Lesson Plan
+		
+		learning worksheet teach worksheet [ this is the class model used on 'learn']
+			- Student Worksheet
+		
+	learning  (index of all learning projects)
+		
+		learning cover learn
+			- Link: requirements - "What you will need"
+			- Link: "Get Started"
+		learning requirements learn requirements
+			- Link: Get Started
+		learning worksheet learn worksheet
+		
+	Making  (index of all Making projects)
+		
+		learning cover make
+			
+		learning requirements make requirements
+			
+		learning worksheet make worksheet
+		
+		-->
+		
+		<!--TODO generate the correct body class tags from categories / keywords in the yml or set another template for the worksheets...--> 
+		
+		
+		<div class="container">
+
+        <header class="header">
+            <a href="/" class="heading" title="Back Home">Daisyrust Learning Resources</a>
+        </header>
+
+        <!--<nav class="nav breadcrumbs">
+            <ul>
+                            </ul>
+        </nav>
+			-->
+        <nav class="nav resource-categories">
+            <ul>
+
+                <li class="help"><a href="/help/">Help</a></li>
+                <li class="teach"><a href="/resources/teaching/">Teach</a></li>
+                <li class="learn"><a href="/resources/learning/">Learn</a></li>
+                <li class="make"><a href="/resources/making/">Make</a></li>
+
+            </ul>
+        </nav>
+
+			<div class="main">
+
+				<article class="content">
+					<h1>Junior Coding Day 1 - Worksheet</h1>
+												
+						<p>In this resource you will create a web page which can translate normal English text into pirate speak using jQuery and regular expressions.</p>
+
+<p>Or, in pirate speak…
+Arr, me hearties. In this resource ye will create a web page which can translate normal English text into pirate speak usin’ jQuery and regularrr expressions.</p>
+
+<h2 id="create-a-web-page">Create a web page</h2>
+
+<ol>
+  <li>Open up a blank file in your chosen text editor and save the file as follows:</li>
+</ol>
+
+<ul>
+  <li>If you’re using <strong>Notepad</strong> on Windows, type the filename in as <code class="highlighter-rouge">index.html</code> and change the drop-down for the “Save as” type to <strong>All files</strong>.</li>
+</ul>
+
+<p><img src="images/save-as-html-notepad.png" alt="Save as HTML using Notepad" /></p>
+
+<ul>
+  <li>If you’re using <strong>TextEdit</strong> on Mac OS, open a new file, then select <code class="highlighter-rouge">Format</code> &gt; <code class="highlighter-rouge">Make Plain Text</code>.</li>
+</ul>
+
+<p><img src="images/mac-make-plaintext.png" alt="Mac make plain text" /></p>
+
+<p>Make sure you save the file as <code class="highlighter-rouge">index.html</code>.</p>
+
+<p><img src="images/mac-name-file.png" alt="Mac saving as HTML" /></p>
+
+<ul>
+  <li>If you’re using <strong>Nano</strong> on a Raspberry Pi, open a terminal window, move to the directory in which you wish to create your web page, and type <code class="highlighter-rouge">nano index.html</code>.</li>
+</ul>
+
+<p><img src="images/pi-html-nano.png" alt="Nano creating HTML" /></p>
+
+<ul>
+  <li>Alternatively, you may wish to create this resource entirely within your web browser which you can do using <a href="http://codepen.io">CodePen</a>. Simply open up a new “pen”, then <strong>skip the second and third steps</strong>.</li>
+</ul>
+
+<ol>
+  <li>This HTML code gives you the basic structure of a page. Copy and paste the code into the file you created, then save the file.</li>
+</ol>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>My page<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    My content here
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<ol>
+  <li>Go to the folder where you saved your web page. Open the file with your internet browser, so now you’ll have the same file open in both your text editor and your browser at the same time.</li>
+</ol>
+
+<p>On Windows, you may need to right-click the file, choose <code class="highlighter-rouge">Open with</code>, and then select your internet browser.</p>
+
+<p><img src="images/open-with-browser.png" alt="Open with browser" /></p>
+
+<p>Whenever you change the code in your text editor, save it and then press the refresh button on your browser to see the page update.</p>
+
+<h2 id="add-jquery">Add jQuery</h2>
+
+<p>jQuery is a JavaScript library intended to make it easy to use JavaScript. The easiest way to enable jQuery is to use a library hosted online, for example by Google.</p>
+
+<ol>
+  <li>Copy and paste this line of code between the <code class="highlighter-rouge">&lt;head&gt;</code> and <code class="highlighter-rouge">&lt;/head&gt;</code> tags of your page, or if you are using CodePen, paste this line into the HTML box:</li>
+</ol>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre>
+</div>
+
+<p>Assuming the computer running your pirate speak web page has an internet connection, you should now have jQuery available. If you want to run the generator without an internet connection, <strong>this code will not work</strong> as your computer will not be able to access the library, so follow the instructions from <a href="http://www.w3schools.com/jquery/jquery_get_started.asp">w3schools</a> to download a local copy of jQuery.</p>
+
+<h2 id="typing-in-your-text">Typing in your text</h2>
+
+<ol>
+  <li>You need to add two <code class="highlighter-rouge">&lt;textarea&gt;</code> boxes. In one of them you will type in the normal text, while the other displays the pirate speak text. These boxes should appear on the page, so this code goes between the <code class="highlighter-rouge">&lt;body&gt;</code> and <code class="highlighter-rouge">&lt;/body&gt;</code> tags (or in the HTML box if you are using CodePen).</li>
+</ol>
+
+<p>This code creates a box called “Landlubbers”, which is where we will write our normal text. Notice that it has the <strong>id</strong> value <code class="highlighter-rouge">normal</code>: we are giving the text box a name so we can refer to it later.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;h2&gt;</span>Landlubbers<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"normal"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+</code></pre>
+</div>
+
+<ol>
+  <li>
+    <p>Using this code as an example, add another <code class="highlighter-rouge">&lt;textarea&gt;</code> box below the first one which will contain the pirate speak text. Set the id to <code class="highlighter-rouge">pirate</code>.</p>
+  </li>
+  <li>
+    <p>Save the file and refresh your internet browser to check that the textarea boxes appear as expected.</p>
+  </li>
+</ol>
+
+<p><img src="images/boxes.png" alt="Text area" /></p>
+
+<ol>
+  <li>If you want the textarea boxes to be a bit bigger or to use a different font, you can add CSS code in the <code class="highlighter-rouge">&lt;head&gt;</code> (or in the CSS section on CodePen) to change the style of the <code class="highlighter-rouge">&lt;textarea&gt;</code> boxes.</li>
+</ol>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+    <span class="nt">textarea</span> <span class="p">{</span>
+
+<span class="nl">width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+      <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="n">arial</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+</code></pre>
+</div>
+
+<p><img src="images/bigger-boxes.png" alt="Text area" /></p>
+
+<ol>
+  <li>Your code so far should look like this if you are using a text editor:</li>
+</ol>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+    <span class="nt">textarea</span> <span class="p">{</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+      <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="n">arial</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+
+  <span class="nt">&lt;h2&gt;</span>Landlubbers<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"normal"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+
+  <span class="nt">&lt;h2&gt;</span>Pirates<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"pirate"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>…or like this if you are using CodePen:</p>
+
+<p><img src="images/codepen-intermediate.png" alt="Intermediate step" /></p>
+
+<h2 id="checking-the-page-has-loaded">Checking the page has loaded</h2>
+
+<p>jQuery allows you to detect when <strong>events</strong> happen on a web page (such as the user typing or clicking on something) and then update the page live in response to the event. We need to check that the page has fully loaded before we start detecting events.</p>
+
+<ol>
+  <li>
+    <p>If you are using a text editor, add a <code class="highlighter-rouge">&lt;script&gt;</code> tag and a closing <code class="highlighter-rouge">&lt;/script&gt;</code> tag immediately after the line of code where you imported jQuery. If you are using CodePen, skip this step but <strong>write all of the rest of the code in the JS section of your pen</strong>.</p>
+  </li>
+  <li>
+    <p>Between the <code class="highlighter-rouge">&lt;script&gt;</code> tags (or in the <strong>JS</strong> section on CodePen), add the following code:</p>
+  </li>
+</ol>
+
+<pre><code class="language-JavaScript">  $(document).ready(function(){
+    alert("Page has loaded");
+  });
+</code></pre>
+
+<p>In plain English, this code says “Wait until the page has fully loaded, then make a box pop up saying that it has loaded”.</p>
+
+<p>The code may look complicated, so let’s break it down:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">$(document)</code> - This identifies what you are talking about, in this case the whole document. This is the <strong>identifier</strong>.</li>
+  <li><code class="highlighter-rouge">.ready(</code> - This is a call to a function which means “when it is ready”, or “when it has fully loaded”. This is the <strong>event</strong>.</li>
+  <li><code class="highlighter-rouge">function(){</code> - This creates a function (a section of code) to be executed when the event is triggered.</li>
+  <li><code class="highlighter-rouge">alert("Page has loaded");</code> - This makes a box pop up with the message “Page has loaded”. This is the <strong>action</strong>.</li>
+  <li><code class="highlighter-rouge">});</code> - The ending for the function (<code class="highlighter-rouge">}</code>), the ending for the <code class="highlighter-rouge">.ready(</code> call (<code class="highlighter-rouge">)</code>) and the end of this line of code (<code class="highlighter-rouge">;</code>).</li>
+</ul>
+
+<p>We can generalise this as “Wait until [<strong>identifier</strong>] has [<strong>event</strong>] and do [<strong>action</strong>]”.</p>
+
+<p>If you are used to indentation in Python, you might have noticed that indentation is not essential in Javascript. It is still advisable to indent your program properly, though: indentation ensures your code is readable both for you, and for anyone who may be helping you to create the resource!</p>
+
+<ol>
+  <li>Save the code and refresh your web browser. If your jQuery code has worked, you should see a pop-up box appear when you load the page.</li>
+</ol>
+
+<p><img src="images/page-has-loaded.png" alt="Page loaded dialogue" /></p>
+
+<h2 id="change-text-on-key-press">Change text on key press</h2>
+
+<ol>
+  <li>It is always a good idea to include this check for whether the page has loaded in your jQuery programs, so that the page doesn’t try to interact with elements which haven’t loaded yet. However, we don’t really want to pop up a box saying the page has loaded every time someone visits our page, so delete the line <code class="highlighter-rouge">alert("Page has loaded");</code> and instead paste in this code:</li>
+</ol>
+
+<pre><code class="language-JavaScript">  $("#normal").keyup(function(){
+    var words = $("#normal").val();
+
+    $("#pirate").val(words);
+  });
+</code></pre>
+
+<p>This code says:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">$("#normal")</code> - Referring to the textarea with the id <code class="highlighter-rouge">normal</code> (# means id)… (<strong>identifier</strong>)</li>
+  <li><code class="highlighter-rouge">.keyup(</code> - When a key is pressed and let go… (<strong>event</strong>)</li>
+  <li><code class="highlighter-rouge">function(){</code> - …Execute the code inside this function… (<strong>action</strong>)</li>
+</ul>
+
+<p>What do you think the code <code class="highlighter-rouge">var words = $("#normal").val();</code> means? Can you break it down into parts?</p>
+
+<ul>
+  <li><code class="highlighter-rouge">var words =</code> - We are making a variable called <code class="highlighter-rouge">words</code> to store some data.</li>
+  <li><code class="highlighter-rouge">$('#normal')</code> - What is this identifier referring to?</li>
+  <li><code class="highlighter-rouge">.val();</code> - This function means “the value of”.</li>
+</ul>
+
+<p>Can you break down the line <code class="highlighter-rouge">$("#pirate").val(words);</code> and have a guess what it does?</p>
+
+<p>Predict what will happen when you save the code and type something into the Landlubbers box, then try it and see if you were right.</p>
+
+<ol>
+  <li>If your code worked correctly, the same words you type in the Landlubbers box should appear in the Pirates box as you type. Although this is not the finished product, it is a good step forward because we now know how to make the contents of the <code class="highlighter-rouge">pirate</code> textarea change when something is typed in the <code class="highlighter-rouge">normal</code> textarea.</li>
+</ol>
+
+<h2 id="replace-words-with-pirate-words">Replace words with pirate words</h2>
+
+<ol>
+  <li>
+    <p>To talk like a pirate, we need to replace certain words with their piratical equivalent. For example, we know pirates say “ahoy” instead of “hello”. Luckily, we know the text that was typed in the Landlubbers text box because we have retrieved and stored it in our <code class="highlighter-rouge">words</code> variable. Let’s use a function to find the word <code class="highlighter-rouge">"hello"</code> and replace it with <code class="highlighter-rouge">"ahoy"</code>.</p>
+  </li>
+  <li>
+    <p>Here is a line of code which should be copied and pasted where the gap is left in the previous code, between <code class="highlighter-rouge">var words = $("#normal").val();</code> and <code class="highlighter-rouge">$("#pirate").val(words);</code>:</p>
+  </li>
+</ol>
+
+<pre><code class="language-JavaScript">  words = words.replace(/hello/gi, "ahoy");
+</code></pre>
+
+<p>Let’s examine this code further:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">words =</code> - Set the value of the variable <code class="highlighter-rouge">words</code> equal to…</li>
+  <li><code class="highlighter-rouge">words.replace(</code> - …whatever it was before, but replace…</li>
+  <li><code class="highlighter-rouge">/hello/gi</code> - …the word “hello” with…</li>
+  <li><code class="highlighter-rouge">, "ahoy");</code> - …the word “ahoy”</li>
+</ul>
+
+<p>You might be wondering why the word “hello” is written as <code class="highlighter-rouge">/hello/gi</code>: this pirate secret will be revealed in the next section!</p>
+
+<ol>
+  <li>Save your code and test it by typing in a sentence containing the word “hello” in the Landlubbers box. You should see your word replaced with “ahoy” in the Pirates box.</li>
+</ol>
+
+<p><img src="images/ahoy-there.png" alt="Hello converted to ahoy" /></p>
+
+<ol>
+  <li>Now see if you can add more lines of code like this to replace other words with more piratical versions. For example, pirates say “yer” instead of “you”, and “avast” instead of “stop”. Try looking for pirate speak websites to find out other pirate word substitutions to experiment with! Use the same code, but put in the word you want to find, and the pirate equivalent you want to replace it with.</li>
+</ol>
+
+<h2 id="using-regular-expressions-to-alter-words">Using regular expressions to alter words</h2>
+
+<p>So how does the computer know which word we want to replace and what to replace it with? Remember the line of code we wrote to replace “hello” with “ahoy”:</p>
+
+<pre><code class="language-JavaScript">words = words.replace(/hello/gi, "ahoy");
+</code></pre>
+
+<p>You might have wondered why we had to write <code class="highlighter-rouge">/hello/gi</code> for the word to find, and only <code class="highlighter-rouge">"ahoy"</code> for the word to replace it with. Why is that? The answer is that to specify the sequence of characters we are looking for, we are actually using something called a <strong>regular expression</strong> (sometimes called a <strong>regex</strong> for short).</p>
+
+<p>A regular expression is a way of specifying a particular sequence of characters to look for in a piece of text.</p>
+
+<ul>
+  <li>The characters we are searching for are put between the slashes <code class="highlighter-rouge">/</code>, so in this case we are just searching for the word <code class="highlighter-rouge">/hello/</code>.</li>
+  <li>The <code class="highlighter-rouge">g</code> after the second slash means <strong>global</strong>: we are telling the code to replace the word <code class="highlighter-rouge">hello</code> with <code class="highlighter-rouge">ahoy</code> <strong>every time it is found</strong>. If we did not put a <code class="highlighter-rouge">g</code> here, only the first <code class="highlighter-rouge">hello</code> found would be replaced.</li>
+  <li>The <code class="highlighter-rouge">i</code> means <strong>case insensitive</strong>: we are telling the code that we don’t mind if it finds <code class="highlighter-rouge">Hello</code> or <code class="highlighter-rouge">HELLO</code> or even <code class="highlighter-rouge">hELlo'</code>. All of these will match and will be replaced with <code class="highlighter-rouge">ahoy</code>.</li>
+</ul>
+
+<p>Regular expressions are extremely powerful: not only can they match exact sequences of characters like <code class="highlighter-rouge">hello</code>, they can also be used to match patterns of characters. There is a good <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions">guide on how to create a regex</a>, but we will explain some examples that you could use in your pirate text generator to get you started:</p>
+
+<ol>
+  <li>You could use the regex character <code class="highlighter-rouge">^</code> (Shift + 6 on many keyboards) which means “the start of the text”. This code will insert the line <code class="highlighter-rouge">"Arr, me hearties. "</code> at the start of anything you type!</li>
+</ol>
+
+<pre><code class="language-JavaScript">  words = words.replace(/^/, "Arr, me hearties. ");
+</code></pre>
+
+<ol>
+  <li>You could use the regex <code class="highlighter-rouge">/(\w+)ev(\w+)\s/g</code>. This one is a bit trickier, so we’ll break it down:</li>
+</ol>
+
+<ul>
+  <li><code class="highlighter-rouge">\w</code> - Matches any single alphanumeric character (so any letter, number, or underscore)</li>
+  <li><code class="highlighter-rouge">+</code> - Matches the previous pattern one or more times</li>
+  <li>
+    <p><code class="highlighter-rouge">\w+</code> - …So together they mean <strong>any</strong> one or more alphanumeric characters</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">()</code> - Brackets around any part of a regex mean “save what was matched so we can use it later”</p>
+  </li>
+  <li><code class="highlighter-rouge">ev</code> - This is just the normal letters e and v. (Notice that the <code class="highlighter-rouge">\w</code> had a backslash character to show that it means something different to a normal letter w.)</li>
+  <li><code class="highlighter-rouge">\s</code> - This means a single space character</li>
+  <li><code class="highlighter-rouge">/g</code> - We already know that the <code class="highlighter-rouge">g</code> means to match all the instances where this pattern is found</li>
+</ul>
+
+<p>So, to explain this regex in plain English: “Find ALL matches containing any one or more letters/numbers (and remember them), then the letters ev, then any one or more letters/numbers (and remember them), then a space”.</p>
+
+<p>So this would match any words containing the letters ev such as n<strong>ev</strong>er or what<strong>ev</strong>er, as long as they are followed by a space. Of course, pirates say “ne’er” instead of “never”, so we tell the program to reconstruct the word, but with an apostrophe instead of the v.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">$1</code> Means what was matched by the first brackets, <code class="highlighter-rouge">$2</code> means the second brackets, and so on…</li>
+</ul>
+
+<p>In the case of the word “never”:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">$1</code> would equal <code class="highlighter-rouge">n</code> (all letters/numbers up to but not including “ev”)</li>
+  <li><code class="highlighter-rouge">$2</code> would equal <code class="highlighter-rouge">er</code> (all letters/numbers after “ev”)</li>
+  <li>So <code class="highlighter-rouge">"$1e'$2 "</code> means “the first saved string (n), then e’, then the second saved string (er)”, which equals <code class="highlighter-rouge">ne'er</code>.</li>
+</ul>
+
+<p>You might be wondering why we didn’t just look up and replace all instances of letter <code class="highlighter-rouge">v</code> with an apostrophe? Firstly, we wouldn’t want to replace the letter <code class="highlighter-rouge">v</code> at the start of words, as we would end up saying things like <code class="highlighter-rouge">'oyage</code> instead of <code class="highlighter-rouge">voyage</code> which doesn’t make much sense. We also don’t want to replace the letter <code class="highlighter-rouge">v</code> in the middle of words if it doesn’t have an <code class="highlighter-rouge">e</code> before it, otherwise we would end up with <code class="highlighter-rouge">shi'er me timbers</code> which just isn’t what a pirate would say.</p>
+
+<p>Here is the finished code:</p>
+
+<pre><code class="language-JavaScript">  words = words.replace(/(\w+)ev(\w+)\s/g, "$1e'$2 ");
+</code></pre>
+
+<p>Here is our finished pirate text generator with both of these regular expressions demonstrated, as well as some other pirate word replacements.</p>
+
+<p><img src="images/finished-pirate.png" alt="Finished pirate" /></p>
+
+<h2 id="what-next">What next?</h2>
+
+<ul>
+  <li>See what you can add to your pirate speech generator! There is a more fully featured example on <a href="http://codepen.io/rpflaura/pen/EZQzdx">CodePen</a> for you to investigate and try out your pirate speech skills.</li>
+  <li>Could you create a generator for any other type of speech? Perhaps you can make people talk like Yoda from Star Wars, or talk in Cockney rhyming slang?</li>
+</ul>
+
+
+
+				</article>
+				
+			</div>
+	</body>
+
+            <div style="clear:both;"></div>
+
+            <footer class="footer">
+                <a href="/creative-commons/" class="logo cc">Creative Commons</a>
+                <small>
+                    <p>This learning resource is provided for free by <a href="http://www.daisyrust.com">Ian Grant aka Daisyrust</a> under a <a href="/creative-commons/">Creative Commons</a> licence.</p>
+                    <p>Find more at <a href="http://www.daisyrust.com">daisyrust.com/resources</a> and <a href="https://iboy.github.io/daisyrust/">github.io/daisyrust/</a>.</p>
+                </small>
+                <a href="https://iboy.github.io/daisyrust/" class="logo gh" title="View and edit this resource on GitHub">View and edit this resource on GitHub</a>
+            </footer>		
+        </div>
+    </div>
+
+
+</html>

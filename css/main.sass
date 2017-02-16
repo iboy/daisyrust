@@ -1,0 +1,721 @@
+---
+# SASS Test
+---
+
+body
+  margin: 0
+  padding: 0
+  font-family: 'Roboto', sans-serif 
+  font-weight: 300
+  font-size: 18px
+  line-height: 26px
+  color: #222
+  word-wrap: break-word
+
+a
+  &:link, &:visited
+    text-decoration: underline
+    color: black
+  &:hover
+    text-decoration: none
+
+strong, b
+  font-weight: 700
+
+h1, h2, h3, h4, h5, h6
+  font-family: "Roboto Slab", serif
+  font-weight: 500
+  color: #438aa5
+  font-weight: 700
+
+h1
+  min-height: 40px
+  margin: 20px -50px
+  padding: 15px 50px
+  background: #438aa5
+  color: white
+  font-size: 36px
+  line-height: 36px
+
+h2
+  margin: 50px 0 50px -50px
+  padding: 0 0 0 50px
+  background: #438aa5
+  color: white
+  font-size: 20px
+  line-height: 40px
+  border: 0
+  border-left: 0
+  color: white
+  &:before
+    width: 80px
+    height: 80px
+    float: left
+    margin: -20px 0 0
+    padding: 0 20px
+
+.cover h2, .requirements h2, .worksheet h2, .lesson h2, .component h2
+  padding: 0 0 0 20px
+
+.cover .overview
+  &.make h2:before
+    content: url('../images/icons/make.png')
+  &.learn h2:before
+    content: url('../images/icons/learn.png')
+
+h2
+  &.make:before
+    content: url('../images/icons/make.png')
+  &.learn:before
+    content: url('../images/icons/learn.png')
+
+.cover .overview
+  &.do h2:before
+    content: url('../images/icons/do.png')
+  &.study h2:before
+    content: url('../images/icons/study.png')
+
+.component h2:before
+  content: url('../images/icons/buy.png')
+
+h2.hardware:before
+  content: url('../images/icons/hardware.png')
+
+.requirements h2
+  &.software:before
+    content: url('../images/icons/software.png')
+  &.extras:before
+    content: url('../images/icons/extras.png')
+
+.worksheet h2
+  &:nth-of-type(1):before
+    content: url('../images/icons/step1.png')
+  &:nth-of-type(2):before
+    content: url('../images/icons/step2.png')
+  &:nth-of-type(3):before
+    content: url('../images/icons/step3.png')
+  &:nth-of-type(4):before
+    content: url('../images/icons/step4.png')
+  &:nth-of-type(5):before
+    content: url('../images/icons/step5.png')
+  &:nth-of-type(6):before
+    content: url('../images/icons/step6.png')
+  &:nth-of-type(7):before
+    content: url('../images/icons/step7.png')
+  &:nth-of-type(8):before
+    content: url('../images/icons/step8.png')
+  &:nth-of-type(9):before
+    content: url('../images/icons/step9.png')
+  &:nth-of-type(10):before
+    content: url('../images/icons/step10.png')
+  &:last-of-type:before
+    content: url('../images/icons/next.png')
+
+.lesson h2
+  &:before
+    content: url('../images/icons/lesson.png')
+  &:nth-of-type(1):before
+    content: url('../images/icons/learning-objectives.png')
+  &:nth-of-type(2):before
+    content: url('../images/icons/learning-outcomes.png')
+  &:nth-of-type(3):before
+    content: url('../images/icons/lesson.png')
+  &:nth-of-type(4):before
+    content: url('../images/icons/starter.png')
+  &:nth-of-type(5):before
+    content: url('../images/icons/main.png')
+  &:nth-of-type(6):before
+    content: url('../images/icons/plenary.png')
+  &:nth-of-type(7):before
+    content: url('../images/icons/homework.png')
+
+h3
+  font-size: 16px
+  line-height: 22px
+  margin: 0
+  background: white
+  border: 0
+
+h4
+  font-size: 16px
+  line-height: 22px
+
+h5, h6
+  font-size: 15px
+  line-height: 22px
+
+.container
+  width: 900px
+  margin: 0 auto
+  border-width: 0 5px
+  border-style: solid
+  border-color: #438aa5
+  
+.container-grid
+  width: 1024px
+  margin: 0 auto
+  background: #e6e2dd
+
+.container-grid
+  overflow: hidden
+
+header.header
+  width: 100%
+  height: 60px
+  background: #438aa5 url('../images/logo.png') no-repeat
+  overflow: auto
+  font-family: "	 Slab"
+  a.heading
+    display: block
+    color: #FFF
+    font-size: 18px
+    font-weight: 700
+    text-decoration: none
+    width: 100%
+    height: 100%
+    text-indent: 60px
+    line-height: 60px
+
+nav
+  &.nav ul li a
+    color: #438aa5
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  &.breadcrumbs
+    float: left
+    ul
+      margin: 10px 0 0 10px
+      padding: 0
+      li
+        float: left
+        list-style-type: none
+        font-size: 10px
+        + li:before
+          float: left
+          width: 20px
+          content: '>'
+          text-align: center
+  &.resource-categories
+    float: right
+    margin: 10px 20px 30px
+    ul
+      margin: 0
+      padding: 0
+      overflow: auto
+      li
+        display: block
+        float: left
+        list-style-type: none
+        padding: 0
+        font-family: "Roboto Slab"
+        font-size: 18px
+        font-weight: 500
+        color: #438aa5
+
+.help nav.resource-categories ul li.help, .teach nav.resource-categories ul li.teach, .learn nav.resource-categories ul li.learn, .make nav.resource-categories ul li.make
+  font-weight: 700
+
+nav.resource-categories ul li + li:before
+  content: '/'
+  margin: 10px
+
+.main
+  margin: 60px auto 0
+  clear: both
+
+.cover .cover-image
+  text-align: center
+
+nav.buttons
+  margin: 50px 0
+  border-top: 4px solid #438aa5
+  a.button
+    display: block
+    float: left
+    width: 300px
+    height: 60px
+    line-height: 60px
+    margin: 50px
+    background: #438aa5
+    color: white
+    font-family: "Roboto Slab"
+    font-size: 18px
+    font-weight: 700
+    text-align: center
+    text-decoration: none
+  &.one a.button
+    margin: 50px auto
+    float: none
+
+.lessons nav.buttons
+  border-top: 0
+  h2
+    min-height: 20px
+    margin: 20px 0 20px -20px
+    background: none
+    color: #438aa5
+    clear: both
+  a
+    margin: 0 50px 50px
+
+ul.hardware-items
+  width: 800px
+  margin: 0
+  padding: 0
+  text-align: center
+  li
+    width: 184px
+    float: left
+    margin: 5px
+    list-style-type: none !important
+    border-color: #438aa5
+    border-style: solid
+    border-width: 3px
+    &:nth-of-type(4n+1)
+      border-left-width: 3px
+    img
+      width: 100%
+      height: auto
+      margin: 0
+    .detail
+      width: 181px
+      height: 36px
+      padding: 10px 3px
+      background: #438aa5
+      color: white
+      font-size: 12px
+      line-height: 18px
+
+.component img
+  width: 50%
+
+.content
+  margin: 0 50px
+  p
+    margin: 20px 0
+  ul, ol
+    margin: 20px 0
+    padding-left: 20px
+  li
+    margin: 20px 0
+  ul li
+    list-style-type: square
+  ol li
+    padding: 0
+  img
+    display: block
+    margin: 40px auto
+    max-width: 760px
+  pre, code
+    background: #f2f1f0
+    border: 1px solid #ddd
+    font-family: "Courier", monospace
+    padding: 2px 5px
+    font-size: 16px
+  pre
+    width: 700px
+    margin: 20px 0
+    padding: 10px
+    font-size: 14px
+    line-height: 20px
+    white-space: pre-wrap
+    code
+      background: transparent
+      border: 0
+      padding: 0
+      font-size: 14px
+
+.token
+  &.operator, &.entity, &.url
+    background: transparent
+
+.language-css .token.string, .style .token.string, .token.variable
+  background: transparent
+
+.content
+  table
+    margin: 0 auto
+    border-collapse: collapse
+    thead
+      display: table-header-group
+      vertical-align: middle
+      border-color: inherit
+      border-top: 1px solid #ccc
+      background-color: #fff
+    tr
+      border-top: 1px solid #ccc
+      background-color: #fff
+    th
+      border: 1px solid #ddd
+      padding: 6px 13px
+      font-weight: bold
+    tbody
+      display: table-row-group
+      vertical-align: middle
+      border-color: inherit
+    td
+      border: 1px solid #ddd
+      padding: 6px 13px
+  iframe
+    margin: 0 auto
+    display: block
+
+footer.footer
+  margin: 80px 50px 0
+  padding: 0 0 20px
+  height: 30px
+  p
+    margin: 0
+    font-size: 13px
+    line-height: 18px
+    color: #555
+  small
+    float: left
+    width: 670px
+    margin-top: -1px
+  a
+    &.logo
+      height: 32px
+      float: left
+      display: block
+      text-indent: -9999px
+    &.cc
+      background: url('../images/icons/creative-commons.png')
+      width: 88px
+      margin-right: 10px
+    &.gh
+      background: url('../images/icons/octocat.png')
+      width: 32px
+      float: right
+    &:link, &:visited
+      color: #438aa5
+      text-decoration: none
+    &:hover
+      text-decoration: underline
+
+@media screen and (max-width: 920px)
+  .container
+    width: 100%
+    border: 0
+    *
+      max-width: 100% !important
+  .main
+    width: 100%
+    margin: 0
+    padding: 0
+  .content
+    margin: 0
+  h1, h2
+    margin: 50px 0
+    padding: 15px
+  h3
+    margin: 10px 0 10px 20px
+  .cover h2, .requirements h2, .worksheet h2, .lesson h2
+    padding: 0
+  .lessons nav.buttons h2
+    margin: 20px
+    line-height: 30px
+  .content
+    p, ol, ul
+      margin: 20px
+    ol li, ul li
+      padding: 0px
+  ul.hardware-items
+    width: 800px
+    margin: 0 auto
+  .content pre
+    width: 92%
+    margin: 20px 2%
+    padding: 10px 2%
+  nav.buttons
+    margin: 0
+    border-top: 0
+  footer.footer
+    margin: 20px 10px 0px
+    padding: 0px 0px 20px
+    text-align: center
+    a
+      &.cc, &.gh
+        float: none
+        margin: 10px auto
+    small
+      float: none
+      margin: 0
+      padding: 0
+
+@media screen and (max-width: 800px)
+  h2
+    padding: 0px 20px
+  .worksheet h2, .teach.cover h2, .cover h2, .requirements h2, .worksheet h2, .lesson h2, .component h2
+    padding: 0px 20px 0 0
+  h2:before
+    width: 40px
+    height: 40px
+    margin: 0
+  .worksheet h2, .teach.cover h2
+    height: auto
+    min-height: 40px
+    padding-right: 5px
+    font-size: 16px
+    line-height: 30px
+  .worksheet h2:before
+    height: auto
+  .teach.cover h2
+    line-height: 40px
+  .cover .overview
+    &.make h2:before
+      content: url('../images/icons/small/make.png')
+    &.learn h2:before
+      content: url('../images/icons/small/learn.png')
+    &.do h2:before
+      content: url('../images/icons/small/do.png')
+    &.study h2:before
+      content: url('../images/icons/small/study.png')
+  .component h2:before
+    content: url('../images/icons/small/buy.png')
+  .requirements h2
+    &.hardware:before
+      content: url('../images/icons/small/hardware.png')
+    &.software:before
+      content: url('../images/icons/small/software.png')
+    &.extras:before
+      content: url('../images/icons/small/extras.png')
+  .worksheet h2
+    &:nth-of-type(1):before
+      content: url('../images/icons/small/step1.png')
+    &:nth-of-type(2):before
+      content: url('../images/icons/small/step2.png')
+    &:nth-of-type(3):before
+      content: url('../images/icons/small/step3.png')
+    &:nth-of-type(4):before
+      content: url('../images/icons/small/step4.png')
+    &:nth-of-type(5):before
+      content: url('../images/icons/small/step5.png')
+    &:nth-of-type(6):before
+      content: url('../images/icons/small/step6.png')
+    &:nth-of-type(7):before
+      content: url('../images/icons/small/step7.png')
+    &:nth-of-type(8):before
+      content: url('../images/icons/small/step8.png')
+    &:nth-of-type(9):before
+      content: url('../images/icons/small/step9.png')
+    &:nth-of-type(10):before
+      content: url('../images/icons/small/step10.png')
+    &:last-of-type:before
+      content: url('../images/icons/small/next.png')
+  .lesson h2
+    &:before
+      content: url('../images/icons/small/lesson.png')
+    &:nth-of-type(1):before
+      content: url('../images/icons/small/learning-objectives.png')
+    &:nth-of-type(2):before
+      content: url('../images/icons/small/learning-outcomes.png')
+    &:nth-of-type(3):before
+      content: url('../images/icons/small/lesson.png')
+    &:nth-of-type(4):before
+      content: url('../images/icons/small/starter.png')
+    &:nth-of-type(5):before
+      content: url('../images/icons/small/main.png')
+    &:nth-of-type(6):before
+      content: url('../images/icons/small/plenary.png')
+    &:nth-of-type(7):before
+      content: url('../images/icons/small/homework.png')
+  nav.buttons a.button
+    width: 46%
+    margin: 20px 2%
+  ul.hardware-items
+    width: 600px
+
+/* Adding GRID and LEARN / INNER stuff Below */
+
+  ul.grid li 
+    margin-left: auto
+    margin-right: auto
+    float: none
+  
+  ul.grid, dl.grid 
+  margin: 0 auto
+  padding: 0
+
+  ul.grid.three 
+  width: 708px
+
+  ul.grid li, dl.grid dt 
+  width: 216px
+  height: 206px
+  float: left
+  position: relative
+  margin: 10px
+  list-style-type: none
+
+  dl.grid dt 
+  clear: both
+  margin: 0 0 50px
+
+  dl.grid dd 
+  width: calc(100% - 216px - 30px)
+  min-height: 186px
+  margin: 0 0 50px 10px
+  padding: 10px
+  float: left
+  background: white
+  font-size: 14px
+  line-height: 24px
+
+  dl.grid dd p 
+    margin: 0
+
+  ul.grid li:nth-of-type(4n+1) 
+    margin-left: 0
+
+  ul.grid li:nth-of-type(4n) 
+    margin-right: 0
+
+  ul.grid li .img, ul.grid li .img img 
+    display: block
+    width: 216px
+    height: 150px
+
+  ul.grid li a.a, dl.grid dt a.a 
+    display: block
+    height: 150px
+
+  ul.grid li div.text, dl.grid dt div.text 
+    width: 200px
+    height: 45px
+    background: white
+    margin: 0
+    padding: 4px 8px
+    overflow: hidden
+
+  ul.grid li div.text a:link, ul.grid li div.text a:visited,
+  article.home-part aside.latest div.text a:link, article.home-part aside.latest div.text a:visited,
+  dl.grid dt div.text a:link, dl.grid dt div.text a:visited 
+  color: #222
+
+  ul.grid li div.text a:hover, article.home-part aside.latest div.text a:hover, dl.grid dt div.text a:hover 
+    text-decoration: none
+
+  ul.grid li a.num-comments:hover, article.home-part aside.latest .img a.num-comments:hover 
+    text-decoration: none
+
+  .grid.blog div.text, .grid .blog div.text 
+    border-color: #ffb300
+
+  .grid.education div.text, .grid .education div.text,
+  .grid.resources div.text, .grid .resources div.text 
+    border-color: #328aab
+
+
+  .grid.teach div.text, .grid .teach div.text
+    border-color: #70adc4
+
+  .grid.learn div.text, .grid .learn div.text 
+    border-color: #99c4d5
+
+  .grid.make div.text, .grid .make div.text 
+    border-color: #20bee8
+
+  .grid.help div.text, .grid .help div.text 
+    border-color: #008375
+
+  ul.grid.downloads li div.text, .grid .downloads div.text 
+    border-color: #c61931
+
+
+  ul.grid.piweekly li div.text, .grid .piweekly div.text 
+    border-color: #4c9c72
+
+  .grid.community div.text, .grid .community div.text 
+    border-color: #71456c
+
+
+  ul.grid li .text .inner, dl.grid dt .text .inner 
+    height: 100px
+    overflow: hidden
+
+  article.home-part.grid p, ul.grid li p, dl.grid dt p
+    /*height: 15px*/
+    overflow: hidden
+
+  article.home-part.grid p.more, ul.grid li p.more, dl.grid dt p.more
+    display: none
+	
+  ul.grid li:hover div.text 
+    height: 103px
+    margin-top: -58px
+
+  article.home-part.grid ul.grid li:hover p.more, ul.grid li:hover p
+    height: auto
+    display: block
+  
+  ul.grid li div.text h3, dl.grid dt div.text h3 
+    height: 45px
+    margin: 0
+    font-size: 12px
+    line-height: 15px
+    text-align: center
+	
+  ul.grid li div.text h3 a, dl.grid dt div.text h3 a 
+    display: block
+
+  ul.grid.help li
+    background: #008375
+
+  ul.grid.community li
+    background: #71456c
+
+  ul.grid.teach li, ul.grid.resources li.teach
+    background: #70adc4
+	
+  ul.grid.learn li, ul.grid.resources li.learn
+    background: #99c4d5
+
+  ul.grid.make li, ul.grid.resources li.make 
+    background: #20bee8
+	
+  .single-piweekly .newsletter .inner
+    box-sizing: border-box
+    width: 100%
+    padding: 10px
+    background: white
+
+  .single-piweekly .newsletter .inner a:link
+    color: #4c9c72
+
+  .single-piweekly .newsletter .inner a:visited
+    color: #008375
+
+  article.home-part aside.latest .text .inner, ul.grid li .text .inner, dl.grid li .text .inner
+    height: 127px
+
+
+  .tax-resource-category.term-teach h1 
+    background: #70adc4
+    color: white
+  .tax-resource-category.term-learn h1
+    background: #99c4d5;
+    color: white;
+  .tax-resource-category.term-make h1
+    background: #20bee8;
+    color: white;
+
+  /*   END of GRID / LEARN / INNER */
+@media screen and (max-width: 600px)
+  ul.hardware-items
+    width: 400px
+
+@media screen and (max-width: 500px)
+  nav.buttons a.button
+    width: 96%
+    margin: 0px 2% 30px
+  .component img
+    width: 100%
+
+@media screen and (max-width: 400px)
+  ul.hardware-items
+    width: 200px
+    li
+      margin: 10px auto
+      float: none

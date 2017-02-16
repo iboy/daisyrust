@@ -52,19 +52,17 @@
 		
 		<div class="container">
 
-{% include header.html %}
+{% include header.html %} 
 
 			<div class="main">
 
 				<article class="content">
 					<h1>{{ page.title}}</h1>
 						
-						{% for static_file in site.static_files %}
-						    {% if static_file.path == '/cover.png' %}
+						
 							    <div class="cover-image">
 							        <img src='images/cover.png' />    </div>
-						    {% endif %}
-						{% endfor %}
+				
 						
 					<!--	
 					    <aside class="overview make">
@@ -73,7 +71,7 @@
 							<p>{{ page.sections[0] | textilize }}</p>
     		
 
-	    				<aside class="overview learn">
+    				<aside class="overview learn">
 	        				<h2>What you will learn</h2>
 							
 							<p>{{ page.sections[1] | textilize }}</p>
@@ -85,9 +83,9 @@
 
 					<nav class="buttons">
 						
-		    			<a class="button requirements" href="{{ site.baseurl }}{% link requirements.md %}">What you will need</a>
-		    			<a class="button worksheet" href="{{ site.baseurl }}{% link worksheet.md %}">Get started</a>
-						
+		    			<a class="button requirements" href="requirements/">What you will need</a>
+		    			<a class="button worksheet" href="worksheet/">Get started</a>
+					
 					</nav>
 
 				</article>

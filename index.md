@@ -1,20 +1,45 @@
 ---
-layout: cover
-title: All out lovely resources
+layout: grid
+title: Teaching, Learning and Making Resources
 permalink: index.html
-kind: learn
-site.title: humbug
+kind: grid
+
 ---
 
+<ul class="grid">
+        <li class="teach" style="background: white url('/images/tile.png') no-repeat top center;">
+	<a href="{{ site.baseurl }}{% link teaching.md %}" class="a"></a>
+		<div class="text">
+			<a href="{{ site.baseurl }}{% link teaching.md %}">
+				<div class="inner">
+					<h3>Teaching</h3>
+					<p class="excerpt">All teaching resources</p>
+				</div>
+			</a>
+		</div>
+	</li>
 
-There is nothing special you need!
-
-
-<h2 class="make">What you will make</h2>
-
-Hello **world!**
-
-
-<h2 class="learn">What you will learn</h2>
-
-Hello world!
+<li class="learn" style="background: white url('/images/tile.png') no-repeat top center;">
+<a href="{{ site.baseurl }}{% link learning.md %}" class="a"></a>
+<div class="text">
+<a href="{{ site.baseurl }}{% link learning.md %}">
+<div class="inner">
+<h3>Learning</h3>
+<p class="excerpt">All learning resources</p>
+</div>
+</a>
+</div>
+</li>
+					
+<li class="make" style="background: white url('/images/tile.png') no-repeat top center;">
+<a href="{{ site.baseurl }}{% link making.md %}" class="a"></a>
+<div class="text">
+<a href="{{ site.baseurl }}{% link making.md %}">
+<div class="inner">
+<h3>Making</h3>
+<p class="excerpt">All making and project resources</p>
+</div>
+</a>
+</div>
+</li>
+</ul>
