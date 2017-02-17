@@ -7,17 +7,17 @@ kind: grid
 ---
 
 <ul class="grid">
-        <li class="teach" style="background: white url('/images/tile.png') no-repeat top center;">
-	<a href="{{ site.baseurl }}{% link teaching.md %}" class="a"></a>
-		<div class="text">
-			<a href="{{ site.baseurl }}{% link teaching.md %}">
-				<div class="inner">
-					<h3>Teaching</h3>
-					<p class="excerpt">All teaching resources</p>
-				</div>
-			</a>
-		</div>
-	</li>
+<li class="teach" style="background: white url('/images/tile.png') no-repeat top center;">
+<a href="{{ site.baseurl }}{% link teaching.md %}" class="a"></a>
+<div class="text">
+<a href="{{ site.baseurl }}{% link teaching.md %}">
+<div class="inner">
+<h3>Teaching</h3>
+<p class="excerpt">All teaching resources</p>
+</div>
+</a>
+</div>
+</li>
 
 <li class="learn" style="background: white url('/images/tile.png') no-repeat top center;">
 <a href="{{ site.baseurl }}{% link learning.md %}" class="a"></a>
