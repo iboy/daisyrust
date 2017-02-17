@@ -7,7 +7,7 @@ kind: grid
 ---
 
 <ul class="grid">
-<li class="teach" style="background: white url('/images/tile.png') no-repeat top center;">
+<li class="teach" style="background: white url('{{ "/images/tile.png" | absolute_url }}') no-repeat top center;">
 <a href="{{ site.baseurl }}{% link teaching.md %}" class="a"></a>
 <div class="text">
 <a href="{{ site.baseurl }}{% link teaching.md %}">
@@ -19,7 +19,7 @@ kind: grid
 </div>
 </li>
 
-<li class="learn" style="background: white url('/images/tile.png') no-repeat top center;">
+<li class="learn" style="background: white url('{{ "/images/tile.png" | absolute_url }}') no-repeat top center;">
 <a href="{{ site.baseurl }}{% link learning.md %}" class="a"></a>
 <div class="text">
 <a href="{{ site.baseurl }}{% link learning.md %}">
@@ -31,7 +31,7 @@ kind: grid
 </div>
 </li>
 					
-<li class="make" style="background: white url('/images/tile.png') no-repeat top center;">
+<li class="make" style="background: white url('{{ "/images/tile.png" | absolute_url }}') no-repeat top center;">
 <a href="{{ site.baseurl }}{% link making.md %}" class="a"></a>
 <div class="text">
 <a href="{{ site.baseurl }}{% link making.md %}">
