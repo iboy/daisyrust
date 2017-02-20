@@ -149,7 +149,7 @@ Explain that in programming we can use “loops” to make a compute repeat some
 
 Using loops we can make the Ozobot draw a square using only three lines of code. 
 
-![Loop in Scratch](/resources/learning/junior_coding_day_1/images/loop.png)
+![Loop in Scratch]({{site.baseurl}}/resources/learning/junior_coding_day_1/images/loop.png)
 
 Explain that in programming we use loops to make our code more efficient and to save us from having to repeat the same lines of code over and over again. 
 
@@ -229,6 +229,6 @@ Example code listing:
 
 ## What next?
 
-- See what you can add to your pirate speech generator! There is a more fully featured example on [CodePen](http://codepen.io/rpflaura/pen/EZQzdx) for you to investigate and try out your pirate speech skills.
-- Could you create a generator for any other type of speech? Perhaps you can make people talk like Yoda from Star Wars, or talk in Cockney rhyming slang?
+Add 2-3 summary pointers for future development.
+Or an on-word to the next resource.
 	
