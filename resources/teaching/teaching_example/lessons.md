@@ -5,7 +5,7 @@ permalink: resources/teaching/teaching_example/lessons/
 kind: teach
 ---
 
-Over the course of this scheme of work, students  will do basic electronics, compile a program in python and learn data some techniques to analyse collected data. 
+Over the course of this scheme of work, students  will ...
 
 <nav class="buttons">
 
