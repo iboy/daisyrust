@@ -5,7 +5,7 @@ permalink: resources/teaching/teaching_example/lesson-1/plan/
 kind: teach
 type: lesson
 next: ../../lesson-2/plan/
-nextButton: false
+nextButton: true
 ---
 
 Short Summary

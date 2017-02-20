@@ -61,16 +61,26 @@
 												
 						{{content}}
 
-
+{% if page.nextButton == true %}
 <div style="clear:both;"></div>
 
 
 					<nav class="buttons one">
-						
-		    		
-		    			<a class="button" href="{{page.next}}">Next lesson</a>
-						
+            <a class="button" href="{{page.next}}">Next lesson</a>
 					</nav>
+{% else %}
+<div style="clear:both;"></div>
+
+
+					<nav class="buttons one">
+            <a class="button" href="../../lessons/">Lesson list</a>
+					</nav>
+{% endif %}
+
+
+
+
+
 
 
 				</article>

@@ -61,18 +61,23 @@
 						
 						{{content}}
 
+
+{% if page.nextButton == true %}
 <div style="clear:both;"></div>
 
 
 					<nav class="buttons one">
-						
-		    		
-		    			<a class="button" href="../lessons/">Go to the lessons</a>
-						
+            <a class="button" href="{{page.next}}">Go to the lessons</a>
 					</nav>
+{% else %}
+<div style="clear:both;"></div>
 
-				</article>
-				
+
+					<nav class="buttons one">
+            <a class="button" href="../">Back</a>
+					</nav>
+{% endif %}
+
 
 
 {% include footer.html %}
