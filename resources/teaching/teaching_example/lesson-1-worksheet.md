@@ -1,5 +1,5 @@
 ---
-layout: worksheet
+layout: worksheet-lesson
 title: Lesson 1 - Student Worksheet
 permalink: resources/teaching/teaching_example/lesson-1/worksheet/
 kind: worksheet
