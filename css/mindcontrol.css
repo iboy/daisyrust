@@ -1391,17 +1391,15 @@ ul.grid li a.num-comments:hover, article.home-part aside.latest .img a.num-comme
 }
 
 .grid.teach div.text, .grid .teach div.text {
-    border-color: #70adc4;
+    border-color: blue;
 }
 
 .grid.learn div.text, .grid .learn div.text {
-    border-color: #99c4d5;
-	border-color:yellow;
+    border-color: yellow;
 }
 
 .grid.make div.text, .grid .make div.text {
-    border-color: #20bee8;
-		border-color:red;
+    border-color:red;
 }
 
 .grid.help div.text, .grid .help div.text {

@@ -8,7 +8,7 @@ kind: grid
 
 Resources for tutors and students.
 
-<ul class="grid {{ page.kind }} learn three"> <!-- the class 'three' adjusts the width to centre the blocks -->
+<ul class="grid {{ page.kind }}  three"> <!-- the class 'three' adjusts the width to centre the blocks -->
   <li class="teach" style="background: white url('{{ "/images/tile.png" | absolute_url }}') no-repeat top center;">
     <a href="{{ site.baseurl }}{% link teaching.md %}" class="a"></a>
     <div class="text">
