@@ -149,7 +149,8 @@ Explain that in programming we can use “loops” to make a compute repeat some
 
 Using loops we can make the Ozobot draw a square using only three lines of code. 
 
-![Loop in Scratch]({{site.baseurl}}/resources/learning/junior_coding_day_1/images/loop.png)
+<img src="{{site.baseurl}}/resources/learning/junior_coding_day_1/images/loop.png" alt="Loop in Scratch">
+
 
 Explain that in programming we use loops to make our code more efficient and to save us from having to repeat the same lines of code over and over again. 
 
