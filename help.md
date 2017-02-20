@@ -5,5 +5,4 @@ kind: learn
 
 ---
 
-
-This is the grid index of **help**.
+Helpful projects and comment support questions.

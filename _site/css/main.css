@@ -18,10 +18,13 @@ strong, b {
   font-weight: 700; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Slab", serif;
+  /*font-family: "Roboto Slab", serif */
   font-weight: 500;
   color: #438aa5;
   font-weight: 700; }
+
+.learning h1, .learning h2, .learning h3, .learning h4, .learning h5, .learning h6 {
+  font-family: "Roboto Slab", serif; }
 
 h1 {
   min-height: 40px;
@@ -98,6 +101,16 @@ h2.hardware:before {
   content: url("../images/icons/step9.png"); }
 .worksheet h2:nth-of-type(10):before {
   content: url("../images/icons/step10.png"); }
+.worksheet h2:nth-of-type(11):before {
+  content: url("../images/icons/step11.png"); }
+.worksheet h2:nth-of-type(12):before {
+  content: url("../images/icons/step12.png"); }
+.worksheet h2:nth-of-type(13):before {
+  content: url("../images/icons/step13.png"); }
+.worksheet h2:nth-of-type(14):before {
+  content: url("../images/icons/step14.png"); }
+.worksheet h2:nth-of-type(15):before {
+  content: url("../images/icons/step15.png"); }
 .worksheet h2:last-of-type:before {
   content: url("../images/icons/next.png"); }
 
@@ -501,6 +514,14 @@ footer.footer {
     content: url("../images/icons/small/step9.png"); }
   .worksheet h2:nth-of-type(10):before {
     content: url("../images/icons/small/step10.png"); }
+  .worksheet h2:nth-of-type(11):before {
+    content: url("../images/icons/small/step11.png"); }
+  .worksheet h2:nth-of-type(12):before {
+    content: url("../images/icons/small/step12.png"); }
+  .worksheet h2:nth-of-type(13):before {
+    content: url("../images/icons/small/step13.png"); }
+  .worksheet h2:nth-of-type(14):before {
+    content: url("../images/icons/small/step14.png"); }
   .worksheet h2:last-of-type:before {
     content: url("../images/icons/small/next.png"); }
 
@@ -718,3 +739,21 @@ footer.footer {
     ul.hardware-items li {
       margin: 10px auto;
       float: none; } }
+kbd {
+  padding: 0.1em 0.6em;
+  border: 1px solid #ccc;
+  font-size: 11px;
+  font-family: monospace;
+  background-color: #f7f7f7;
+  color: #333;
+  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 0.1em;
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.4;
+  white-space: nowrap; }

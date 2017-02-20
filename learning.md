@@ -4,7 +4,7 @@ title: All Learning Resources
 kind: learn
 permalink: /resources/learning/
 ---
-
+<ul class="grid {{ page.kind }}">
 <li class="learn" style="background: white url('{{ "/resources/learning/junior_coding_day_1/images/tile.png" | absolute_url }}') no-repeat top center;">
     <a href="{{ site.baseurl }}{% link resources/learning/junior_coding_day_1/index.md %}" class="a"></a>
     <div class="text">
@@ -27,3 +27,4 @@ permalink: /resources/learning/
         </a>
     </div>
 </li>
+</ul>

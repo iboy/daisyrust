@@ -56,15 +56,10 @@
 
 			<div class="main">
 
-				<article class="content">
+				<article class="content component">
 					<h1>{{ page.title}}</h1>
 						
-						{% for static_file in site.static_files %}
-						    {% if static_file.path == '/cover.png' %}
-							    <div class="cover-image">
-							        <img src='images/cover.png' />    </div>
-						    {% endif %}
-						{% endfor %}
+						
 						
 					<!--	
 					    <aside class="overview make">
@@ -85,8 +80,8 @@
 
 					<nav class="buttons">
 						
-		    			<a class="button requirements" href="{{ "/requirements.md" | absolute_url }}">What you will need</a>
-		    			<a class="button worksheet" href="{{ "/requirements.md" | absolute_url }}">Get started</a>
+		    			<a class="button requirements" href="../requirements/">What you will need</a>
+		    			<a class="button worksheet" href="../worksheet/">Get started</a>
 						
 					</nav>
 

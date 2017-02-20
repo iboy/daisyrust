@@ -1,12 +1,17 @@
 ---
 layout: components
-title: This is the component view
+title: Ozobot
 kind: learn
-description: a discussion of the component xyz
+description: this is my component.
 ---
 
 ## Hi this is my components sheet ##
 
-This is the **components** view.
+<p><img src="{{ "/resources/learning/junior_coding_day_1/images/ozobot_large.jpg" | absolute_url }}" /></p>
+<p>{{ page.description }}</p>
+<p>Buy an Ozobot from:</p>
+<ul>
+<li><a href="http://shop.pimoroni.com/products/led-5mm-pack-of-10">Ozobots</a></li>
+</ul>
 
 This site is built with Jekyll.
