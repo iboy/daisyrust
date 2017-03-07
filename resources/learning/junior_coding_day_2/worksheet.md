@@ -33,7 +33,7 @@ Here's a short video showing the use of  the playground *Fundamentals of Swift*.
 
 ***
 
-{% vimeo 207289751 %}
+{% vimeo 207289751%}
 
 ***
 
