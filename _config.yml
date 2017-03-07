@@ -1,8 +1,0 @@
----
-permalink: pretty
-title: Daisyrust Learning Resources
-homeurl: http://www.daisyrust.com
-kramdown: 
-    parse_block_html: true
-encoding: UTF-8
----
