@@ -23,9 +23,13 @@ Welcome to our workshop where we will be exploring key concepts in coding using 
 Playgrounds are environments for learning and testing real Swift code that updates live.
 Swift is a new programming language. It started on iOS and macOS and now can power software on Linux and Windows. We will use the Swift Playground  *Fundamentals of Swift*  to explore the following key concepts in coding: 
 
-* Commands and Sequences;* Debugging, Functions and Loops;* Thinking Efficiently.
+* Commands and Sequences;
+* Debugging, Functions and Loops;
+* Thinking Efficiently.
 
-Here's a short video showing the use of  the playground *Fundamentals of Swift*:
+Here's a short video showing the use of  the playground *Fundamentals of Swift*.
+
+**Note**: Github Pages may block embedded video - so here is a direct link: [https://vimeo.com/207289751](https://vimeo.com/207289751). This wouldn't be a problem with standard hosting.
 
 ***
 
@@ -69,17 +73,32 @@ Q. How could they be improved?
 
 *** 
 
-**Practice (15 minutes)**In Swift Playgrounds complete the following puzzles:* Introduction* Issuing Commands* Adding a New Command* Toggling Switches* Portal Practice
+**Practice (15 minutes)**
+
+In Swift Playgrounds complete the following puzzles:
+
+* Introduction
+* Issuing Commands
+* Adding a New Command
+* Toggling Switches
+* Portal Practice
 
 ***
 
 **Journal your progress in SeeSaw (10 minutes)**
-* What is a command?* What is a sequence?
+
+* What is a command?
+* What is a sequence?
 
 ***
 
 **Reflection (10 minutes)**
-How many moves did it take to solve the puzzle? How many commands did you write?How does it compare with spoken instructions (in the previous task)?Think of a digital game you play: Names a few commands and sequences that are used?How does thinking like a person compare with *thinking like a computer*?
+
+How many moves did it take to solve the puzzle? 
+How many commands did you write?
+How does it compare with spoken instructions (in the previous task)?
+Think of a digital game you play: Names a few commands and sequences that are used?
+How does thinking like a person compare with *thinking like a computer*?
 
 
 ## Think like a detective: Debugging (1 hour) ##
@@ -119,23 +138,62 @@ Upload your notes, images or videos from working with Swift Playgrounds. What di
 
 Summarise your experiences around debugging within Swift Playgrounds.
 
-* Did the steps in the previous exercise help with the debugging task?* Did the process for debugging differ from the general process for 'fixing'? If so, how so?* Why is bug-squashing important? Does a small bug matter? * Can you advise a coder how to avoid bugs?* Debugging takes time: how can we save time when coding? 
+* Did the steps in the previous exercise help with the debugging task?
+* Did the process for debugging differ from the general process for 'fixing'? If so, how so?
+* Why is bug-squashing important? Does a small bug matter? 
+* Can you advise a coder how to avoid bugs?
+* Debugging takes time: how can we save time when coding? 
 
 ## Thinking efficiently: Functions and introducing loops (1 hour 30 minutes) ##
 
-**Introduction (5 minutes)*** What is your favourite dance?* Can anyone perform this dance?* Can you teach me the dance?
+**Introduction (5 minutes)**
+
+* What is your favourite dance?
+* Can anyone perform this dance?
+* Can you teach me the dance?
 
 ***
 
-**Activity: Pattern Maker (20 minutes)**You have 3 Minutes, working in pairs: Create a repeating pattern  with different shapes and colours. You will use "Explain Everything" to create and present your patterns.
-* Write the pattern using words 20 times;* Find a repeating block and give it a name;* Write the pattern again, replacing the repeating block with the new ;* How does this relate to coding?*** 
-**Practice: Functions and *for loops* (1 hour)**In Swift Playgrounds complete the following puzzles:* Introduction* Using Loops* Looping All the Sides* To the Edge and Back* Loop Jumper*****Journal and reflection (5 minutes)** 
+**Activity: Pattern Maker (20 minutes)**
 
-Record your progress in SeeSaw. Screen-capture when you complete a section.Upload your notes, images or videos from working with Swift Playgrounds. * What did you learn about loops?* What does it mean to think efficiently?**Reflection** 
-* How many moves did the character make? * How many commands did you need to write?* When and why should you create functions and loops?* What other functions would/could you create to help Byte solve the puzzles?
+You have 3 Minutes, working in pairs: Create a repeating pattern  with different shapes and colours. You will use "Explain Everything" to create and present your patterns.
 
-**Thinking ahead**
-**Question:** How do we stop a 'for loop'?
+* Write the pattern using words 20 times;
+* Find a repeating block and give it a name;
+* Write the pattern again, replacing the repeating block with the new ;
+* How does this relate to coding?
+
+*** 
+**Practice: Functions and *for loops* (1 hour)**
+
+In Swift Playgrounds complete the following puzzles:
+
+* Introduction
+* Using Loops
+* Looping All the Sides
+* To the Edge and Back
+* Loop Jumper
+
+***
+
+**Journal and reflection (5 minutes)** 
+
+Record your progress in SeeSaw. Screen-capture when you complete a section.
+Upload your notes, images or videos from working with Swift Playgrounds. 
+* What did you learn about loops?
+* What does it mean to think efficiently?
+
+**Reflection** 
+
+* How many moves did the character make? 
+* How many commands did you need to write?
+* When and why should you create functions and loops?
+* What other functions would/could you create to help Byte solve the puzzles?
+
+
+**Thinking ahead**
+
+**Question:** How do we stop a 'for loop'?
 
 ***
 
@@ -144,12 +202,42 @@ Record your progress in SeeSaw. Screen-capture when you complete a section.Uplo
 
 ## Practice: Functions and *for loops* (1 hour) ##
 
-In Swift Playgrounds complete the following puzzles:* Introduction* Using Loops* Looping All the Sides* To the Edge and Back* Loop Jumper**Journal** 
-Record your progress in SeeSaw. Screen-capture when you complete a section.Upload your notes, images or videos from working with Swift Playgrounds. * What did you learn about loops?* What does it mean to think efficiently?**Reflection** * How many moves did the character make? * How many commands did you need to write?* When and why should you create functions and loops?* What other functions would/could you create to help Byte solve the puzzles?
+
+
+In Swift Playgrounds complete the following puzzles:
+
+* Introduction
+* Using Loops
+* Looping All the Sides
+* To the Edge and Back
+* Loop Jumper
+
+**Journal** 
+
+Record your progress in SeeSaw. Screen-capture when you complete a section.
+Upload your notes, images or videos from working with Swift Playgrounds. 
+* What did you learn about loops?
+* What does it mean to think efficiently?
+
+**Reflection** 
+* How many moves did the character make? 
+* How many commands did you need to write?
+* When and why should you create functions and loops?
+* What other functions would/could you create to help Byte solve the puzzles?
 
 ## Plenary - review and reflect (15 minutes) ##
-Review the concepts covered so farIn Swift Playgrounds complete the following puzzles that pull together the concepts covered so far. Note about your progress and collect images for your journal.* Branch Out* Gem Farm* Four Stash Sweep
+
+Review the concepts covered so far
+In Swift Playgrounds complete the following puzzles that pull together the concepts covered so far. Note about your progress and collect images for your journal.
+
+* Branch Out
+* Gem Farm
+* Four Stash Sweep
 
 ## What next? ##
 
-Swift playgrounds are a way to explore and learn code by directly interacting with simple views of real code. Find more in the resource list and explore in your own time.Next we will look at animation and digital design. How do we make creative visuals for our apps and games?
+Swift playgrounds are a way to explore and learn code by directly interacting with simple views of real code. Find more in the resource list and explore in your own time.
+
+Next we will look at animation and digital design. 
+
+How do we make creative visuals for our apps and games?
