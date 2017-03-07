@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
+  <head>
 	<meta charset="UTF-8" />
 	    <meta name="viewport" content="width=device-width" />
 	    <title>This is the component view</title>
@@ -20,56 +18,9 @@
 	
 	
 </head>
-
-	<body class="learning learn components learn"> <!-- These need to be generated using the meta data -->
-		<!--
-		types
-	teach (index of all teaching projects)
-		
-		learning cover teach						summary cover
-			- Reqs
-			- Links: Lessons
-		learning requirements teach requirements	summary of reqs (as a list of links with image)
-			- Hardwarel
-			- Software
-			- Extras
-			- Links: Lessons
-		learning component teach weather-board		individual component view
-			
-		learning lessons teach lessons				summary sheet of lessons
-			- List Title with Link: Lesson Plan Link: Student Worksheet
-			
-		learning plan teach lesson
-			- Lesson Plan
-		
-		learning worksheet teach worksheet [ this is the class model used on 'learn']
-			- Student Worksheet
-		
-	learning  (index of all learning projects)
-		
-		learning cover learn
-			- Link: requirements - "What you will need"
-			- Link: "Get Started"
-		learning requirements learn requirements
-			- Link: Get Started
-		learning worksheet learn worksheet
-		
-	Making  (index of all Making projects)
-		
-		learning cover make
-			
-		learning requirements make requirements
-			
-		learning worksheet make worksheet
-		
-		-->
-		
-		<!--TODO generate the correct body class tags from categories / keywords in the yml or set another template for the worksheets...--> 
-		
-		
-		<div class="container">
-
-        <header class="header">
+  <body class="learning learn components learn"> 
+    <div class="container">
+              <header class="header">
             <a href="http://localhost:4000/" class="heading" title="Back Home">Daisyrust Learning Resources</a>
         </header>
 
@@ -85,49 +36,22 @@
 
             </ul>
         </nav>
-
-			<div class="main">
-
-				<article class="content component">
-					<h1>This is the component view</h1>
-						
-						
-						
-					<!--	
-					    <aside class="overview make">
-					        <h2>What you will make</h2>
-							
-							<p></p>
-    		
-
-	    				<aside class="overview learn">
-	        				<h2>What you will learn</h2>
-							
-							<p></p>
-
-						-->
-						
-						<h2 id="hi-this-is-my-components-sheet">Hi this is my components sheet</h2>
+      <div class="main">
+        <article class="content component">
+          <h1>This is the component view</h1>
+          <h2 id="hi-this-is-my-components-sheet">Hi this is my components sheet</h2>
 
 <p>This is the <strong>components</strong> view.</p>
 
 <p>This site is built with Jekyll.</p>
 
-
-
-					<nav class="buttons">
-						
-		    			<a class="button requirements" href="../requirements/">What you will need</a>
-		    			<a class="button worksheet" href="../worksheet/">Get started</a>
-						
-					</nav>
-
-				</article>
-				
-			</div>
-	</body>
-
-
+          <nav class="buttons">
+            <a class="button requirements" href="../requirements/">What you will need</a>
+            <a class="button worksheet" href="../worksheet/">Get started</a>
+          </nav>
+        </article>
+      </div>
+    
         <div style="clear:both;"></div>
 
         <footer class="footer">
@@ -140,6 +64,5 @@
         </footer>		
     </div>
 </div>
-
-
+  </body>
 </html>

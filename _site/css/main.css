@@ -111,6 +111,36 @@ h2.hardware:before {
   content: url("../images/icons/step14.png"); }
 .worksheet h2:nth-of-type(15):before {
   content: url("../images/icons/step15.png"); }
+.worksheet h2:nth-of-type(16):before {
+  content: url("../images/icons/step16.png"); }
+.worksheet h2:nth-of-type(17):before {
+  content: url("../images/icons/step17.png"); }
+.worksheet h2:nth-of-type(18):before {
+  content: url("../images/icons/step18.png"); }
+.worksheet h2:nth-of-type(19):before {
+  content: url("../images/icons/step19.png"); }
+.worksheet h2:nth-of-type(20):before {
+  content: url("../images/icons/step20.png"); }
+.worksheet h2:nth-of-type(21):before {
+  content: url("../images/icons/step21.png"); }
+.worksheet h2:nth-of-type(22):before {
+  content: url("../images/icons/step22.png"); }
+.worksheet h2:nth-of-type(23):before {
+  content: url("../images/icons/step23.png"); }
+.worksheet h2:nth-of-type(24):before {
+  content: url("../images/icons/step24.png"); }
+.worksheet h2:nth-of-type(25):before {
+  content: url("../images/icons/step25.png"); }
+.worksheet h2:nth-of-type(26):before {
+  content: url("../images/icons/step26.png"); }
+.worksheet h2:nth-of-type(27):before {
+  content: url("../images/icons/step27.png"); }
+.worksheet h2:nth-of-type(28):before {
+  content: url("../images/icons/step28.png"); }
+.worksheet h2:nth-of-type(29):before {
+  content: url("../images/icons/step29.png"); }
+.worksheet h2:nth-of-type(30):before {
+  content: url("../images/icons/step30.png"); }
 .worksheet h2:last-of-type:before {
   content: url("../images/icons/next.png"); }
 

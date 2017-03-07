@@ -19,7 +19,7 @@ credit: Swift Playgrounds Learn to Code 1+2
 <img src="{{site.baseurl}}/resources/learning/junior_coding_day_2/images/swiftplayground.jpg" width="480" alt="Swift Playgrounds">
 
 **Swift Programming**
-Through games and interactive work we will 
+Through games and interactive work we will use ...
 
 **Sharing our work**  
 We'll be sharing the material we make using Seesaw. Log in using the iPad app and the picture below (printed in class) . Then upload your picture and add a reflection (audio, text or video):
