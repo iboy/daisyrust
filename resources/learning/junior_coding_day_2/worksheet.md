@@ -29,11 +29,9 @@ Swift is a new programming language. It started on iOS and macOS and now can pow
 
 Here's a short video showing the use of  the playground *Fundamentals of Swift*.
 
-**Note**: Github Pages may block embedded video - so here is a direct link: [https://vimeo.com/207289751](https://vimeo.com/207289751). This wouldn't be a problem with standard hosting.
-
 ***
 
-{% vimeo 207289751%}
+{% vimeo 207430358%}
 
 ***
 
