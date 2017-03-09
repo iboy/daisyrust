@@ -29,7 +29,7 @@ gems:
 name: shadowengine
 title: Daisyrust Learning Resources
 permalink: pretty
-url: 
+homeurl: http://www.daisyrust.com
 kramdown:
   parse_block_html: true
 encoding: UTF-8

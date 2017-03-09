@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: grid
 title: Creative Commons
 kind: learn
 
@@ -26,6 +26,6 @@ Share Alike – If you alter, transform, or build upon these materials, you must
 
 ## CONTRIBUTIONS ##
 
-We welcome contributions to our documentation, which is hosted on the Raspberry Pi GitHub and enhancements or improvements to our learning resources on the Raspberry Pi Learning GitHub. While observing the contributions policy (given in the CONTRIBUTING.md file in the root of each repository), you are free to fork any repository and create a pull request for your changes to be merged. In all cases the licence must remain in any derivatives of the work, and any contributions are assumed to be licensed under the same licence.
+We welcome contributions to our documentation and enhancements or improvements to our learning resources found on GitHub. While observing the contributions policy (given in the CONTRIBUTING.md file in the root of each repository), you are free to fork any repository and create a pull request for your changes to be merged. In all cases the licence must remain in any derivatives of the work, and any contributions are assumed to be licensed under the same licence.
 
 See the full guide on creating resources and submitting material to us.
