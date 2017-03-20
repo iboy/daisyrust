@@ -6,7 +6,7 @@ description: this is my component.
 permalink: /resources/learning/junior_coding_day_1/ozobot/
 ---
 
-![Image of Ozobot]({{ "/images/components/ozobot_large.jpg" | absolute_url }})
+![Image of Ozobot]({{ "/assets/components/ozobot_large.jpg" | absolute_url }})
 {{ page.description }}
 
 ## Buy ##
