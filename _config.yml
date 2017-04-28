@@ -26,7 +26,7 @@ ga_analytics:
 gems:
 - jekyll-assets
 - jekyll-sitemap
-name: shadowengine
+name: steamcamp
 title: STEAM Camp UK
 permalink: pretty
 homeurl: http://www.steamcamp.club
@@ -35,4 +35,4 @@ kramdown:
   syntax_highlighter: rouge
   linenos: true
 encoding: UTF-8
-baseurl:
+baseurl: xxx

@@ -9,17 +9,6 @@ kind: grid
 Resources for tutors and students.
 
 <ul class="grid {{ page.kind }}  three"> <!-- the class 'three' adjusts the width to centre the blocks -->
-  <li class="teach" style="background: white url('{{ site.url }}{% asset_path tile.png %}') no-repeat top center;">
-    <a href="{{ site.baseurl }}{% link teaching.md %}" class="a"></a>
-    <div class="text">
-      <a href="{{ site.baseurl }}{% link teaching.md %}">
-        <div class="inner">
-          <h3>Teaching</h3>
-          <p class="excerpt">All teaching resources</p>
-        </div>
-      </a>
-    </div>
-</li>
 
 <li class="learn" style="background: white url('{{ site.url }}{% asset_path tile.png %}') no-repeat top center;">
   <a href="{{ site.baseurl }}{% link learning.md %}" class="a"></a>
@@ -44,6 +33,18 @@ Resources for tutors and students.
     </a>
   </div>
   </li>
+  
+  <li class="teach" style="background: white url('{{ site.url }}{% asset_path tile.png %}') no-repeat top center;">
+    <a href="{{ site.baseurl }}{% link teaching.md %}" class="a"></a>
+    <div class="text">
+      <a href="{{ site.baseurl }}{% link teaching.md %}">
+        <div class="inner">
+          <h3>Teaching</h3>
+          <p class="excerpt">All teaching resources</p>
+        </div>
+      </a>
+    </div>
+</li>
 </ul>
 
 <div style="clear:both;"></div>
