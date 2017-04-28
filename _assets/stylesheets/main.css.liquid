@@ -190,8 +190,9 @@ h5, h6 {
 
 header.header {
   width: 100%;
-  height: 60px;
-  background: #438aa5 url("{% asset_path logo.png %}") no-repeat;
+  height: 220px;
+  /*background: #438aa5 url("{% asset_path logo.svg %}") no-repeat;*/
+  background: #438aa5;
   overflow: auto;
   font-family: "Roboto Slab"; }
 
@@ -232,13 +233,17 @@ nav.breadcrumbs ul li + li:before {
   text-align: center; }
 
 nav.resource-categories {
-  float: right;
+  /*float: right;*/
+  
   margin: 10px 20px 30px; }
 
 nav.resource-categories ul {
   margin: 0;
   padding: 0;
-  overflow: auto; }
+  text-align: center;
+  margin: auto;
+  overflow: auto; 
+  z-index: 4;}
 
 nav.resource-categories ul li {
   display: block;
@@ -248,9 +253,11 @@ nav.resource-categories ul li {
   font-family: "Roboto Slab";
   font-size: 18px;
   font-weight: 500;
-  color: #438aa5; }
+  color: #438aa5; 
+  z-index: 4;
+  }
 
-.help nav.resource-categories ul li.help, .teach nav.resource-categories ul li.teach, .learn nav.resource-categories ul li.learn, .make nav.resource-categories ul li.make {
+.help .about .welcome .contact li.about li.welcome li.contact nav.resource-categories ul li.help, .teach nav.resource-categories ul li.teach, .learn nav.resource-categories ul li.learn, .make nav.resource-categories ul li.make {
   font-weight: 700; }
 
 nav.resource-categories ul li + li:before {

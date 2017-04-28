@@ -1,0 +1,61 @@
+#steam{
+  position:absolute;
+  top:-2em;
+  left:30em;
+}
+#steam2{
+  
+  position:absolute;
+  top: 10em;
+  left:35.5em;
+}
+
+
+#steam3{
+  
+  position:absolute;
+  top: -2.5em;
+  left: 55em;
+}
+
+#steam4{
+  
+  position:absolute;
+  top: 240px;
+  left:332px;
+}
+
+#svgimage{
+  
+  text-align:center;
+  margin-top: 40px;
+  z-index: -1;
+}
+
+@keyframes hideshow {
+  0% { opacity: 1; }
+  10% { opacity: 1; }
+  15% { opacity: 0; }
+  100% { opacity: 0; }
+} 
+
+@keyframes popup {
+  0% {
+    transform: translateY(150px);
+  }
+  34% {
+    transform: translateY(20px);
+  }
+  37% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(150px);
+  }
+}
+
+@keyframes rotation {
+	0% 		{ transform: rotate(0deg); }
+	50% 	{ transform: rotate(180deg); }
+	100% 	{ transform: rotate(360deg); }
+} 

@@ -1,12 +1,24 @@
         <header class="header">
-            <a href="{{ site.baseurl }}{% link index.md %}" class="heading" title="Back Home">{{site.title}}</a>
+            
+            <div id="svgimage">
+         {% include logo.svg %}
+            </div>
+            
         </header>
         <!--<nav class="nav breadcrumbs"></nav>-->
-        <nav class="nav resource-categories">
-            <ul>
-                <li class="help"><a href="{{ site.baseurl }}{% link help.md %}">Help</a></li>
-                <li class="teach"><a href="{{ site.baseurl }}{% link teaching.md %}">Teach</a></li>
-                <li class="learn"><a href="{{ site.baseurl }}{% link learning.md %}">Learn</a></li>
-                <li class="make"><a href="{{ site.baseurl }}{% link making.md %}">Make</a></li>
-            </ul>
-        </nav>
+        <!-- Logo -->
+          <div>
+          <nav class="nav resource-categories">
+              <ul>
+                  <li class="about"><a href="{{ site.baseurl }}{% link welcome.md %}">Welcome</a></li>
+                  <li class="learn"><a href="{{ site.baseurl }}{% link learning.md %}">Learn</a></li>
+                  <li class="make"><a href="{{ site.baseurl }}{% link making.md %}">Make</a></li>
+                  <li class="teach"><a href="{{ site.baseurl }}{% link teaching.md %}">Teach</a></li>
+                  <li class="contact"><a href="{{ site.baseurl }}{% link contact.md %}">Contact</a></li>
+
+              </ul>
+          </nav>
+        
+        </div>
+
+

@@ -27,7 +27,7 @@ gems:
 - jekyll-assets
 - jekyll-sitemap
 name: shadowengine
-title: Daisyrust Learning Resources
+title: STEAMCamp UK
 permalink: pretty
 homeurl: http://www.daisyrust.com
 kramdown:
