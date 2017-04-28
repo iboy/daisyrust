@@ -27,12 +27,12 @@ gems:
 - jekyll-assets
 - jekyll-sitemap
 name: shadowengine
-title: STEAMCamp UK
+title: STEAM Camp UK
 permalink: pretty
-homeurl: http://www.daisyrust.com
+homeurl: http://www.steamcamp.club
 kramdown:
   parse_block_html: true
   syntax_highlighter: rouge
   linenos: true
 encoding: UTF-8
-baseurl: /daisyrust
+baseurl:
