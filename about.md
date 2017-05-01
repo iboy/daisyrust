@@ -1,28 +1,35 @@
 ---
 layout: grid
-title: Welcome - Full STEAM ahead!
-kind: learn
-permalink: /
+title: What is STEAM?
+permalink: /about/
 
 ---
 
 
-<span id="letterS">S</span><span id="letterT">T</span><span id="letterE">E</span><span id="letterA">A</span><span id="letterM">M</span> **CAMP** London is coming soon! 
+<span id="letterS">S</span><span id="letterT">T</span><span id="letterE">E</span><span id="letterA">A</span><span id="letterM">M</span> education works to integrate creative, critical and artistic perspectives at the heart of Science, Technology. Engineering and Maths (STEM) subjects. By including the 'A' of *Art and Design*, <span id="letterS">S</span><span id="letterT">T</span><span id="letterE">E</span><span id="letterA">A</span><span id="letterM">M</span> approaches emphasise the value arts methodologies add in the exploration of other core subjects. However, Art and design processes are not just *tools for learning* or a bolt-on element but are at the root of promoting how we learn to be **innovative**, **creative** and **expressive**. It also seeks to learn through play, exploration and prospective thought *in action*: through *making* and collaborative projects.
 
-We offer courses, after-school clubs, holiday activities and parties that bring together <span id="letterS">S</span>cience, <span id="letterT">T</span>echnology, <span id="letterE">E</span>ngineering, <span id="letterA">A</span>rt+Design and <span id="letterM">M</span>aths in exciting creative workshops for all ages.
+>"STEAM isn't about simply "adding" the arts to the equation or utilising a single element of art (design) in a lesson. It's about looking for naturally-aligned standards between the Arts - all of them - and STEM content areas, and then teaching in and through those standards in a way that allows you to assess both." -- **Susan Riley** (Arts Integration Specialist and Founder of [EducationCloset.com](http://EducationCloset.com))
 
-The workshops encourage **play**, **design** and **making** while exploring deeper connections between ideas involving design, creative computing, material science, games, biology, media, sound and practical maths.
+<span id="letterS">S</span><span id="letterT">T</span><span id="letterE">E</span><span id="letterA">A</span><span id="letterM">M</span>  in education is a global movement seeking to challenge educational systems that marginalise creative and expressive subjects favouring STEM subjects that are easier to benchmark and standardise.
 
 
-We use lots of things to assist our creative play: digital technology, robots, puppets, plants and mushrooms, coding, Lego, Raspberry Pis, electronics, kites, balloons, art-materials, cameras, worms, air, body sensors and much, much more!
+### Critical Advocates of STEAM and integrated approaches to Art and  Design with STEM 
 
-We have workshops in Digital Fashion, Retro-gaming, Games programming, AI, Drones, Bio-materials, 3D design and printing, Coding, Sensing, Weather-watching and there are more on the way.
 
-<span id="letterS">S</span><span id="letterT">T</span><span id="letterE">E</span><span id="letterA">A</span><span id="letterM">M</span> **CAMPs**, **COURSES** and **CLUBs** aim to:
+* Rhode Island School of Design: [http://www.risd.edu/about/STEM-to-STEAM/News/STEM-to-STEAM-news/)](http://www.risd.edu/about/STEM-to-STEAM/News/STEM-to-STEAM-news/)
+* Stem-to-STEAM: [http://stemtosteam.org](http://stemtosteam.org)
+* STEM to STEAM Map: A world map of STEAM activity: [http://map.stemtosteam.org](http://map.stemtosteam.org)
+
+
+
+We will launch <span id="letterS">S</span><span id="letterT">T</span><span id="letterE">E</span><span id="letterA">A</span><span id="letterM">M</span> **CAMP** with courses in creative computing, games, coding, robotics, sound and music and 3D and animated digital arts. Then we aim to create workshops exploring biology (see our proposed *Craft Mycology* series), digital fashion, astronomy and photography.
+
+
+Also, <span id="letterS">S</span><span id="letterT">T</span><span id="letterE">E</span><span id="letterA">A</span><span id="letterM">M</span> **CAMPs**, **COURSES** and **CLUBs** aim to:
 
 - be open and accessible
 - support girls and women in technology
 - engage the educationally excluded and
 - be fun for all!
 
-**Ian Grant. May, 2017.**
+**Ian Grant. May 2017.**

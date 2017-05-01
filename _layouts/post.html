@@ -9,8 +9,8 @@
         
         
         <section class="post-wrapper">
-              <p class="post-date">{{ page.date }}</p>
-              <p class="post-date">{{ page.author }}</p>
+              <p class="post-meta">Posted: {{ page.date | date: '%B %d, %Y' }} by {{ page.author }}</p>
+              
         </section>
             <article class="post-content">
               {{content}}
