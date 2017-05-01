@@ -6,11 +6,13 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #222;
-  word-wrap: break-word; }
+  word-wrap: break-word; 
+  }
 
 a:link, a:visited {
   text-decoration: underline;
-  color: black; }
+  color: black; 
+  }
 
 a:hover {
   text-decoration: none; }
@@ -183,6 +185,7 @@ h5, h6 {
 .container-grid {
   width: 1024px;
   margin: 0 auto;
+
   background: #e6e2dd; }
 
 .container-grid {
@@ -254,6 +257,7 @@ nav.resource-categories ul li {
   font-size: 18px;
   font-weight: 500;
   color: #438aa5; 
+  
   z-index: 4;
   }
 
@@ -266,6 +270,7 @@ nav.resource-categories ul li + li:before {
 
 .main {
   margin: 60px auto 0;
+ 
   clear: both; }
 
 .cover .cover-image {
@@ -844,4 +849,54 @@ kbd {
   transform: scale(1.1);
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+table {
+  max-width: 960px;
+  /* margin: 10px auto; */
+}
+
+caption {
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+thead th {
+  font-weight: 400;
+  background: #438AA5;
+  color: #FFF;
+}
+
+tr {
+  background: #fff;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+  background: #F6F9FB;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 300;
+}
+
+tfoot tr {
+  background: none;
+}
+
+tfoot td {
+  padding: 10px 2px;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #8a97a0;
+}
+
+hr {
+
 }

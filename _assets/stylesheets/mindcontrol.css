@@ -310,13 +310,23 @@ article.home-part.grid p, ul.grid li p, dl.grid dt p {
 article.home-part.grid p.more, ul.grid li p.more, dl.grid dt p.more {
   display: none; }
 
+  ul.grid li div.text {
+    -webkit-transition: height .5s, margin-top .5s;
+    transition-timing-function: cubic-bezier(.5,0,.5,1);
+  }
+
 ul.grid li:hover div.text {
   height: 103px;
-  margin-top: -58px; }
+  margin-top: -58px;  /* -58px */ 
+
+  
+  
+}
 
 article.home-part.grid ul.grid li:hover p.more, ul.grid li:hover p {
   height: auto;
-  display: block; }
+  display: block; 
+}
 
 ul.grid li div.text h3, dl.grid dt div.text h3 {
   height: 45px;

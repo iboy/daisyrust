@@ -3,8 +3,8 @@
 
 module Jekyll
   class Vimeo < Liquid::Tag
-    @@width = 640
-    @@height = 360
+    @@width = 760
+    @@height = 428
 
     def initialize(name, id, tokens)
       super

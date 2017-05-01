@@ -30,9 +30,5 @@ name: steamcamp
 title: STEAM Camp UK
 permalink: pretty
 homeurl: http://www.steamcamp.club
-kramdown:
-  parse_block_html: true
-  syntax_highlighter: rouge
-  linenos: true
 encoding: UTF-8
-baseurl: xxx
+baseurl:

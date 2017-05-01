@@ -1,50 +1,32 @@
 ---
 layout: grid
-title: Teaching, Learning and Making Resources
-permalink: index.html
-kind: grid
+title: Welcome - Full STEAM ahead!
+kind: learn
+permalink: /
 
 ---
 
-Resources for tutors and students.
 
-<ul class="grid {{ page.kind }}  three"> <!-- the class 'three' adjusts the width to centre the blocks -->
+<span id="letterS">S</span><span id="letterT">T</span><span id="letterE">E</span><span id="letterA">A</span><span id="letterM">M</span> **CAMP** London is coming soon! 
 
-<li class="learn" style="background: white url('{{ site.url }}{% asset_path tile.png %}') no-repeat top center;">
-  <a href="{{ site.baseurl }}{% link learning.md %}" class="a"></a>
-  <div class="text">
-    <a href="{{ site.baseurl }}{% link learning.md %}">
-      <div class="inner">
-        <h3>Learning</h3>
-        <p class="excerpt">All learning resources</p>
-      </div>
-    </a>
-  </div>
-</li>
-					
-<li class="make" style="background: white url('{{ site.url }}{% asset_path tile %}') no-repeat top center;">
-  <a href="{{ site.baseurl }}{% link making.md %}" class="a"></a>
-  <div class="text">
-    <a href="{{ site.baseurl }}{% link making.md %}">
-      <div class="inner">
-        <h3>Making</h3>
-        <p class="excerpt">All making and project resources</p>
-      </div>
-    </a>
-  </div>
-  </li>
-  
-  <li class="teach" style="background: white url('{{ site.url }}{% asset_path tile.png %}') no-repeat top center;">
-    <a href="{{ site.baseurl }}{% link teaching.md %}" class="a"></a>
-    <div class="text">
-      <a href="{{ site.baseurl }}{% link teaching.md %}">
-        <div class="inner">
-          <h3>Teaching</h3>
-          <p class="excerpt">All teaching resources</p>
-        </div>
-      </a>
-    </div>
-</li>
-</ul>
+We offer courses, after-school clubs, holiday activities and parties that bring together:
 
-<div style="clear:both;"></div>
+<span id="letterS">S</span>cience, <span id="letterT">T</span>echnology, <span id="letterE">E</span>ngineering, <span id="letterA">A</span>rt and Design. and <span id="letterM">M</span>aths...
+
+in exciting, creative workshops for all ages.
+
+The workshops encourage **play**, **design** and **making** while exploring deeper connections between ideas involving art, design, creative computing, material science, games, biology, nature, media, sound and practical maths.
+
+
+We use lots of things to assist our creative play: digital technology, robots, puppets, plants and mushrooms, coding, Lego, Raspberry Pis, electronics, kites, balloons, art-materials, cameras, worms, air, body sensors and much, much more!
+
+We have workshops in Digital Fashion, Retro-gaming, Games programming, AI, Drones, Bio-materials, 3D design and printing, Coding, Sensing, Weather-watching and there are more on the way.
+
+<span id="letterS">S</span><span id="letterT">T</span><span id="letterE">E</span><span id="letterA">A</span><span id="letterM">M</span> **CAMPs**, **COURSES** and **CLUBs** aim to:
+
+- be open and accessible
+- support girls and women in science, computing and technology
+- engage the educationally excluded, and
+- be fun for all!
+
+**Ian Grant. May, 2017.**
