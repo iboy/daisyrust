@@ -5,9 +5,7 @@ permalink: resources/learning/begin_coding_day_2/
 kind: cover
 ---
 
-<aside class="overview do"> 
-
-## What You Will Do ##
+<aside class="overview do"><h2>What you will do </h2></aside>
 
 This day will be a coding themed day. Students will explore basic concepts of the programming language Swift using Fire Tech Camp’s very own interactive playground book: *Swift for Juniors* or Apple's Swift Playground *Fundamentals of Swift*.
 
@@ -17,11 +15,8 @@ You will:
 * Solve puzzles and code in a *Swift Playground* exploring sequential instructions, conditional code, control loops and functions
 * Journal our progress.
 
-</aside>
 
-<aside class="overview learn">
-
-## What You Will Learn ##
+<aside class="overview learn"><h2>What you will learn</h2></aside>
 
 
 * Experience key coding concepts and terms: 
@@ -30,4 +25,5 @@ You will:
 3. Thinking Efficiently.
 
 *  Algorithms and Pseudocode by solving practical physical problems.
-</aside>
+
+

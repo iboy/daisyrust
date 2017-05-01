@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head_grid.html %}
+  <body class="archive tax-resource-category term-teach term-1261" style="zoom:1;">
+    <div class="container-grid">
+      {% include header.html %}
+      <div class="main">
+        <h2>{{ page.title }}</h2>
+        
+        
+        <section class="post-wrapper">
+              <p class="post-date">{{ page.date }}</p>
+              <p class="post-date">{{ page.author }}</p>
+        </section>
+            <article class="post-content">
+              {{content}}
+            </article>
+        
+        
+
+      </div>
+      {% include footer_main.html %}
+  </body>
+</html>
