@@ -9,11 +9,7 @@ permalink: /
 
 <span id="letterS">S</span><span id="letterT">T</span><span id="letterE">E</span><span id="letterA">A</span><span id="letterM">M</span> **CAMP** London is coming soon! 
 
-We offer courses, after-school clubs, holiday activities and parties that bring together:
-
-<span id="letterS">S</span>cience, <span id="letterT">T</span>echnology, <span id="letterE">E</span>ngineering, <span id="letterA">A</span>rt and Design. and <span id="letterM">M</span>aths...
-
-in exciting, creative workshops for all ages.
+We offer courses, after-school clubs, holiday activities and events that bring together <span id="letterS">S</span>cience, <span id="letterT">T</span>echnology, <span id="letterE">E</span>ngineering, <span id="letterA">A</span>rt and Design and <span id="letterM">M</span>aths in exciting, creative workshops for all ages.
 
 The workshops encourage **play**, **design** and **making** while exploring deeper connections between ideas involving art, design, creative computing, material science, games, biology, nature, media, sound and practical maths.
 
