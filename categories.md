@@ -3,6 +3,7 @@ layout: categories
 title: Blog Index
 kind: learn
 permalink: /categories/
+coverImage: none
 
 ---
 

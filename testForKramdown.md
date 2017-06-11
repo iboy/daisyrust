@@ -3,6 +3,8 @@ layout: grid
 title: Coding and Markdown Tests
 kind: make
 permalink: /codetest/
+coverImage: none
+
 ---
 
 A paragraph of content here. Then some code with line-numbers. Working nicely.

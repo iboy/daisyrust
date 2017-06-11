@@ -2,6 +2,7 @@
 layout: grid
 title: Creative Commons
 kind: learn
+coverImage: none
 
 ---
 

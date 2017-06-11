@@ -3,6 +3,7 @@ layout: grid
 title: shop with us and our partners
 permalink: /shop/
 kind: grid
+coverImage: none
 
 ---
 

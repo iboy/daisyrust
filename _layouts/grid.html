@@ -4,6 +4,13 @@
   <body class="archive tax-resource-category term-teach term-1261" style="zoom:1;">
     <div class="container-grid">
       {% include header.html %}
+      
+      
+      {% if page.coverImage == "none" %}
+      {% else %}
+      <img src="/assets/{{ page.coverImage | image }}" alt="cover image" style="width:1024px; ">
+      {% endif %}
+     
       <div class="main">
         <h2>{{ page.title }}</h2>
         {{ content }}

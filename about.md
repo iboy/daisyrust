@@ -2,6 +2,7 @@
 layout: grid
 title: What is STEAM?
 permalink: /about/
+coverImage: none
 
 ---
 

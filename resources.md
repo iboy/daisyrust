@@ -3,7 +3,7 @@ layout: grid
 title: learning, making and teaching resources
 permalink: /resources/
 kind: grid
-
+coverImage: none
 ---
 
 Index for resources for tutors and students. Demo content. Coming soon!

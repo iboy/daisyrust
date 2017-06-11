@@ -3,6 +3,7 @@ layout: grid
 title: All Making Resources
 kind: make
 permalink: /resources/making/
+coverImage: none
 ---
 <ul class="grid {{ page.kind }}">
 <li class="make" style="background: white url('{{ site.url }}{% asset_path tile.png %}') no-repeat top center;">

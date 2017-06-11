@@ -3,7 +3,7 @@ layout: grid
 title: Welcome - Full STEAM ahead!
 kind: learn
 permalink: /
-
+coverImage: "lego_science.png"
 ---
 
 
@@ -18,7 +18,9 @@ We use lots of things to assist our creative play: digital technology, robots, p
 
 We have workshops in Digital Fashion, Retro-gaming, Games programming, AI, Drones, Bio-materials, 3D design and printing, Coding, Sensing, Weather-watching and there are more on the way.
 
-<span id="letterS">S</span><span id="letterT">T</span><span id="letterE">E</span><span id="letterA">A</span><span id="letterM">M</span> **CAMPs**, **COURSES** and **CLUBs** aim to:
+## Our aims
+
+<span id="letterS">S</span><span id="letterT">T</span><span id="letterE">E</span><span id="letterA">A</span><span id="letterM">M</span> **Camps**, **Courses** and **Clubs** aim to:
 
 - be open and accessible
 - support girls and women in science, computing and technology
@@ -26,3 +28,4 @@ We have workshops in Digital Fashion, Retro-gaming, Games programming, AI, Drone
 - be fun for all!
 
 **Ian Grant. May, 2017.**
+

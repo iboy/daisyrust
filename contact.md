@@ -3,6 +3,7 @@ layout: grid
 title: Contact STEAMCamp
 kind: learn
 permalink: /contact/
+coverImage: none
 
 ---
 

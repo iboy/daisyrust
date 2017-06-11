@@ -3,6 +3,7 @@ layout: grid
 title: Welcome to the STEAM Camp blog
 kind: learn
 permalink: /blog/
+coverImage: none
 
 ---
 
