@@ -21,16 +21,16 @@ The Key Exchange Problem
 Alice and Bob and all
 [https://en.wikipedia.org/wiki/Alice_and_Bob](https://en.wikipedia.org/wiki/Alice_and_Bob)
 
-Visual Crytography
+Visual Cryptography
 [https://www.cl.cam.ac.uk/~fms27/vck/vck-poster.pdf](https://www.cl.cam.ac.uk/~fms27/vck/vck-poster.pdf)
 
 ## Learning Objectives ##
 
-To introduce, in a practical way, the protocols of symmetric and asymmetric cryptographic systems;
-To define, in a number of senses, what a *key* is, and how they can be exchanged - in secret;
-To use and understand a simple substitution (or shift) cipher (Caesar's Cipher);
-To experience a more complex piece of visual cryptography and consider how it was made;
-To introduce an overview for how *easy* encryption techniques are made *hard*, with mathematics.
+1. To introduce, in a practical way, the protocols of symmetric and asymmetric cryptographic systems;
+2. To define, in a number of senses, what a *key* is, and how they can be exchanged - in secret;
+3. To use and understand a simple substitution (or shift) cipher (Caesar's Cipher);
+4. To experience a more complex piece of visual cryptography and consider how it was made;
+5. To introduce an overview for how *easy* encryption techniques are made *hard*, with mathematics.
 
 ## Cross-curricular applications ##
 
@@ -47,11 +47,17 @@ Briefly discuss the main terms and some of the reasons we need secure, private e
 
 ## Main development ##
 
-Content
+Demonstrate the key exchange solution in practice.
 
 ## Plenary ##
 
-Content
+Discuss keys: understand the nature of public and private keys.
+
+Discuss weak encryption: introduce frequency analysis
+
+Work in some 'analogies' of how more complex systems of encryption might work.
+Enigma
+ 
 
 ## Extension ##
 

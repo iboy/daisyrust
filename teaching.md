@@ -13,7 +13,7 @@ coverImage: none
           <a href="{{ site.baseurl }}{% link resources/teaching/crypto/index.md %}">
               <div class="inner">
                   <h3>Introducing Cryptography</h3>
-                  <p class="excerpt">Running an effective plenary session</p>
+                  <p class="excerpt">A practical exploration of key-exchange, Caesar ciphers and Visual Cryptography.</p>
               </div>
           </a>
       </div>

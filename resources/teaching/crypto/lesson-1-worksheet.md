@@ -13,7 +13,7 @@ In this lesson you will:
 * Meet Alice, Bob and Eve;
 * See an overview of the process of exchanging secret **keys** in public;
 * See a simple and more complex cipher algorithm working together;
-* See how visual cryptography works.
+* See how *visual cryptography* works.
 * Learn and discuss some key words and concepts: 
   * cyptography, 
   * encryption, 
