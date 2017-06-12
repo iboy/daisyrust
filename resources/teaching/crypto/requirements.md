@@ -7,19 +7,17 @@ nextButton: false
 next: ../lessons/
 ---
 
-<h2 class="Software">Software</h2>
+<h2 class="Software">Software and Objects</h2>
 
-Photoshop or similar.
-Unix or macOS terminal  
+A lockable Box
 
-<ul class="hardware-items">
+2 padlocks with keys (colour coded locks and keys)
 
-<li>
+Cipher disk - with two alphabet disks
 
-<a href="{{ "/resources/learning/junior_coding_day_1/ozobot/" | absolute_url }}"><img src="{{ site.url }}{% asset_path components/ozobot_large.jpg %}" /></a>
+A and B pair of a *Visual Cryptographic* images: one on paper the other on transparencies.
 
-<div class="detail">4 x Ozobots</div>
-</li>
+Photoshop or similar to produce 50 x 50 bitmap as source of the *Visual Cryptographic*
 
+Unix or macOS terminal with Python installed and the python script (in the worksheet).
 
-</ul>

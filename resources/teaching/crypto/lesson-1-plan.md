@@ -5,7 +5,7 @@ permalink: resources/teaching/crypto/lesson-1/plan/
 kind: teach
 type: lesson
 next: ../../lesson-2/plan/
-nextButton: true
+nextButton: false
 ---
 
 Short Summary

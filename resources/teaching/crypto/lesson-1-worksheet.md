@@ -66,6 +66,8 @@ Can you work out how Alice can send the box and all it's contents so Bob can ope
 * A sealed envelope (do not open it yet)
 * A random pattern
 
+Take a very close look at the seal on the envelope.
+
 Open the envelope and see if you can piece together the clues to solve the original cipher:
 
 **ZNLQNL! ZNLQNL! ZNLQNL!**
@@ -190,7 +192,7 @@ If we have time we can talk through it. If not read the comments, they explain t
 
 ## What's next
 
-With help see if you can get the python code working.
+Alone or with help, see if you can get the python code working.
 
 Discuss and discover: How do we use mathematics to make stronger encryption?
 
@@ -199,5 +201,6 @@ See:
 * factorisation
 * prime numbers
 * modular (or clock) arithmetic;
+* randomness
 
 
