@@ -284,38 +284,119 @@ Eve, is a snooper and is eavesdropping on all their communications.</p>
 <h2 id="whats-in-the-box-10-minutes">What’s in the box? (10 minutes)</h2>
 
 <ul>
-  <li>Here is a cipher disk for everyone</li>
-  <li>A sealed envelope (do not open it yet)</li>
-  <li>A random pattern</li>
+  <li>A cipher disk for everyone</li>
+  <li>A sealed envelope (do not open it yet) with a wax seal.</li>
+  <li>A seemingly random pattern</li>
 </ul>
 
 <p>Take a very close look at the seal on the envelope.</p>
 
-<p>Open the envelope and see if you can piece together the clues to solve the original cipher:</p>
+<p>Open the envelope and see if you can piece together the clues to solve the original cipher-text:</p>
 
-<p><strong>ZNLQNL! ZNLQNL! ZNLQNL!</strong></p>
+<h3 id="znlqnl-znlqnl-znlqnl"><strong>ZNLQNL! ZNLQNL! ZNLQNL!</strong></h3>
 
-<p>This is known as the <em>Caesar Cipher</em> or <em>Substitution Cipher</em> or <em>Shift Cipher</em>. It has lots of names.</p>
+<h2 id="what-are-the-random-noise-images">What are the random noise images?</h2>
 
-<h2 id="how-does-the-visual-cryptography-work-3-minutes">How does the ‘visual cryptography’ work (3 minutes)?</h2>
+<p>Open the envelop and you find another image that appears to be noise, printed on transparency film.</p>
 
-<p><img src="/resources/teaching/crypto/images/xor_overlay.png" width="400" alt="Xor Overlay" /></p>
+<p>Overlay this image (Image B) with the other image (Image A) printed on paper, and a hidden third image should appear.</p>
 
-<p><img src="/resources/teaching/crypto/images/enciphering_a_bitmap_.png" width="800" alt="Enciphering a bitmap" /></p>
+<p>The image pair are a form of <em>visual</em> encryption. One image is a kind of ‘key’ for the other.</p>
 
-<h2 id="plenary-discuss-the-following-questions-2-minutes">Plenary: Discuss the following questions (2 minutes)</h2>
+<p><strong>Clue:</strong> The secret image hints at the setting for your Caesar Cipher disk.</p>
 
-<p>Why is the original encrypted message <em>weak</em>?</p>
+<p>Simple alphabetic <em>shifting</em> or offsetting by a number of letter places is known as the <em>Caesar Cipher</em>. It is also known as the <em>Substitution Cipher</em> or <em>Shift Cipher</em>. It has lots of names.</p>
+
+<p>If the Cipher disk is confusing to count and read: instead of thinking of the <em>Shift Cipher</em> as a circle, like it appears on our disk of two alphabets, think of it as a small table, like so:</p>
+
+<p><img src="/resources/teaching/crypto/images/300px-ROT13.png" width="300" alt="Shift cipher and rot13 visualisation." /></p>
+
+<p>Draw one for yourself and de-encrypt the original message by looking up the encoded letters on the top row. Write down the corresponding letters on the bottom row.</p>
+
+<p>The shift of 13 is special and creates a very weak cipher called <a href="https://en.wikipedia.org/wiki/ROT13">ROT13</a>.</p>
+
+<h2 id="plenary-discuss-the-following-questions-2-10-minutes-as-time-allows">Plenary: Discuss the following questions (2-10 minutes, as time allows)</h2>
+
+<p>Describe how you solved the problem?</p>
+
+<p>Was it easy or hard? Too easy? Too hard?</p>
+
+<p>Does the combination of securities make the cipher-text any stronger?</p>
+
+<p>Why is the original encrypted message - the cypher text <strong>ZNLQNL! ZNLQNL! ZNLQNL!</strong> - <em>weak</em>?</p>
 
 <p>How can we make cipher algorithms <em>stronger</em>?</p>
 
-<p>What can you use ‘visual cryptography’ for?</p>
+<p>What is ‘frequency analysis’. It’s a kind of <em>cryptanalysis</em> and can be used to <em>attack</em> encryption ciphers.</p>
 
-<h2 id="heres-the-python-code-reference-material">Here’s the python code (reference material)</h2>
+<p>What uses can you think of for such <em>visual cryptography</em>?</p>
+
+<p>What is a digital signature?</p>
+
+<h2 id="how-do-the-visual-cryptography-images-work-3-minutes">How do the ‘visual cryptography’ images work? (3 minutes)</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Original Image</td>
+      <td>Encoded Image A</td>
+      <td>Encoded Image B</td>
+    </tr>
+    <tr>
+      <td><img src="/resources/teaching/crypto/images/Code_Source.png" alt="Original Image" /></td>
+      <td><img src="/resources/teaching/crypto/images/Code_Source_A.png" alt="Encoded Image A" /></td>
+      <td><img src="/resources/teaching/crypto/images/Code_Source_B.png" alt="Encoded Image B" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="how-are-these-images-made">How are these images made?</h3>
+
+<p>One bitmap (black and white) image is processed into two complementary images - Encoded Image A and Image B.</p>
+
+<p>Look closely, or zoom in , and you should see the pixel squares of the low-resolution (100x100 pixels) image.</p>
+
+<p>Every pixel in the original image (50x50) is checked and replaced by a four pixel pattern selected at random from a set of six patterns (doubling the size of the original image). If a pixel contains value, i.e. is black, you can think of it as a ‘1’, if is white think of it as a ‘0’. In the second - encoded image B - the four pixel pattern is flipped when a black pixel is found.</p>
+
+<p>The code to do this, below, isn’t that complicated once you get your brain around it.</p>
+
+<p>Therefore, there is a very subtle difference between image A and image B. When a flipped pattern is aligned with it’s pair (using transparent film as in our example), the pixel combination make that 4x4 pixel group appear darker, replicating the tonal values of the original image.</p>
+
+<p><img src="/resources/teaching/crypto/images/xor_overlay.png" width="400" alt="Xor Overlay" /></p>
+
+<p>The image above represents the <strong>boolean logic</strong> of an exclusive-or operation (an XOR) and an image overlay similar to the patterns in the code sample, below.</p>
+
+<p><img src="/resources/teaching/crypto/images/enciphering_a_bitmap_.png" width="800" alt="Enciphering a bitmap" /></p>
+
+<p>The image ‘Enciphering a bitmap image’ (above) contains an alternative description of a very similar process.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>We’ve experienced secure key exchange, seen several kind of ‘keys’ and types of encryption/decryption.
+The Caesar cipher, especially set to 13, is famously weak and insecure. It is easily attacked and solved using ‘frequency analysis’ or ‘brute force’. For example, the common letters of the alphabet repeat more than than the rare one and looking for frequent repetition can hint at ‘A’s’ or ‘E’s’ and reveal the shift.  Or ‘brute force’: try all the 25 other possibilities. That’s why our original secret had three repetitions of word and six repetitions of the common letter ‘A’ - to emphasise how patterns form in encrypted cipher-text and how this can be a weakness.</p>
+
+<p>So, what are the <em>keys</em> in real-world cryptography?</p>
+
+<p>They are often a pair of numbers, mathematically related. Remember the ‘public’ and ‘private’ keys mentioned above. These days, the keys are large numbers (several hundred digits long). Not like our two digit key ‘13’ for the Caesar Cipher. The key numbers are used as parts of mathematical problems that take a long time to solve (even with super-computers) if all parts of the original formula are missing. A Long time = years to tens of years for a very fast computer (or set of computers).</p>
+
+<h2 id="further-explorations---visual-cryptography-python-code">Further Explorations - Visual cryptography python code</h2>
+
+<p>Here is the python script that produces two images. Separately they are more or less random noise. Together - totally aligned - they reveal the source image.</p>
+
+<p>See if you can follow the code - it is well commented.</p>
+
+<p>Spot where the randomising of the patterns happens.</p>
+
+<p>Spot the loop in a loop that steps through the X and Y pixel dimensions of the bit-map image. The code block in-the-loop in-the-loop repeats for every pixel in the images. This is called a ‘per-pixel operation’.</p>
+
+<p>Find the condition in the for loop.</p>
+
+<p>See if you can spot the part where the X and Y pixel coordinates of the 4x4 pixel grid are walked through and assigned a value of 1 or 0 (black or white).</p>
 
 <p>If we have time we can talk through it. If not read the comments, they explain the process.</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code>  <span class="c">#To run at command line type: </span>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code>  <span class="c">#Code source: https://github.com/LessonStudio/VisualCryptography/blob/master/visual_cryptography.py</span>
+  <span class="c">#To run at command line type: </span>
   <span class="c">#</span>
   <span class="c">#python /path/to/script/scriptName.py path/to/source/bitmap/image.png</span>
   <span class="c">#</span>
@@ -339,10 +420,14 @@ Eve, is a snooper and is eavesdropping on all their communications.</p>
   <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
   <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">SystemRandom</span>
   <span class="n">random</span> <span class="o">=</span> <span class="n">SystemRandom</span><span class="p">()</span>
-  <span class="c">#If you want to use the more powerful PyCrypto (pip install pycrypto) then uncomment the next line and comment out the previous two lines</span>
+  <span class="c">#If you want to use the more powerful PyCrypto </span>
+  <span class="c">#(pip install pycrypto) then uncomment the next line </span>
+  <span class="c">#and comment out the previous two lines</span>
   <span class="c">#from Crypto.Random import random</span>
 
-  <span class="c">#Check if the script has the correct number of command line arguments </span>
+  <span class="c">#Check if the script has the correct number of command line arguments. </span>
+  <span class="c">#Scripts run on the command line python have 'arguments'. The first (in this case)</span>
+  <span class="c">#is the script name itself, the second is the path to the source image. Hence: '2' below </span>
   <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span><span class="o">!=</span><span class="mi">2</span><span class="p">:</span>
   	<span class="k">print</span> <span class="s">"This takes one argument; the image to be split."</span>
   	<span class="nb">exit</span><span class="p">()</span>
@@ -369,7 +454,8 @@ Eve, is a snooper and is eavesdropping on all their communications.</p>
   <span class="n">draw_A</span> <span class="o">=</span> <span class="n">ImageDraw</span><span class="o">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">out_image_A</span><span class="p">)</span>
   <span class="n">draw_B</span> <span class="o">=</span> <span class="n">ImageDraw</span><span class="o">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">out_image_B</span><span class="p">)</span>
 
-  <span class="c">#There are 6(4 choose 2) possible patterns</span>
+  <span class="c">#There are 6 possible patterns. The four digits represent</span>
+  <span class="c">#4x4 pixel blocks</span>
   <span class="c">#These relate to the xor and overlay diagrams above</span>
   <span class="c">#For every black or white pixel in the original image</span>
   <span class="c">#the loop below replaces them systematically with </span>
@@ -383,12 +469,12 @@ Eve, is a snooper and is eavesdropping on all their communications.</p>
   		<span class="n">pixel</span><span class="o">=</span><span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span>
   		<span class="n">pat</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">patterns</span><span class="p">)</span>
   		<span class="c">#A will always get the pattern</span>
-  		<span class="n">draw_A</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="p">),</span> <span class="n">pat</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-  		<span class="n">draw_A</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="p">),</span> <span class="n">pat</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-  		<span class="n">draw_A</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">pat</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-  		<span class="n">draw_A</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">pat</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+  		<span class="n">draw_A</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="p">),</span> <span class="n">pat</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c"># pat[0] is the first digit in one of the sets above</span>
+  		<span class="n">draw_A</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="p">),</span> <span class="n">pat</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c"># pat[1] is the second digit in one of the sets above</span>
+  		<span class="n">draw_A</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">pat</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="c"># pat[2] is the third digit in one of the sets above</span>
+  		<span class="n">draw_A</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">pat</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="c"># pat[4] is the fourth digit in one of the sets above</span>
   		<span class="k">if</span> <span class="n">pixel</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span><span class="c">#Dark pixel so B gets the anti pattern</span>
-  			<span class="n">draw_B</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="p">),</span> <span class="mi">1</span><span class="o">-</span><span class="n">pat</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+  			<span class="n">draw_B</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="p">),</span> <span class="mi">1</span><span class="o">-</span><span class="n">pat</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c">#The minus here effectively 'inverts' the pattern</span>
   			<span class="n">draw_B</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="p">),</span> <span class="mi">1</span><span class="o">-</span><span class="n">pat</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
   			<span class="n">draw_B</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="mi">1</span><span class="o">-</span><span class="n">pat</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
   			<span class="n">draw_B</span><span class="o">.</span><span class="n">point</span><span class="p">((</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="mi">1</span><span class="o">-</span><span class="n">pat</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
@@ -410,14 +496,20 @@ Eve, is a snooper and is eavesdropping on all their communications.</p>
 
 <p>Discuss and discover: How do we use mathematics to make stronger encryption?</p>
 
+<p>Is the maths really complicated? Or a combination of things we already know, expressed in a different way?</p>
+
 <p>See:</p>
 
 <ul>
-  <li>factorisation</li>
+  <li>integer factorisation</li>
   <li>prime numbers</li>
   <li>modular (or clock) arithmetic;</li>
-  <li>randomness</li>
+  <li>randomness.</li>
 </ul>
+
+<p>List some of the names of other encryption methods, other than the Caesar cipher we have met?</p>
+
+<p>As a start check out: RSA, the Diffie-Hellman key exchange; WEP, WEP2, for example. The descriptions get maths heavy quite quickly. Try to scan through the complicated stuff!</p>
 
 
           

@@ -13,11 +13,14 @@ A lockable Box
 
 2 padlocks with keys (colour coded locks and keys)
 
-Cipher disk - with two alphabet disks
+Caesar Cipher disk - with two alphabet disks
 
 A and B pair of a *Visual Cryptographic* images: one on paper the other on transparencies.
 
-Photoshop or similar to produce 50 x 50 bitmap as source of the *Visual Cryptographic*
+Photoshop, Gimp or similar to produce 50 x 50 bitmap as source of the *Visual Cryptographic* image.
 
-Unix or macOS terminal with Python installed and the python script (in the worksheet).
+Windows, Unix or macOS terminal with Python installed and the Python Image Library 
+
+The python script (code listing in the worksheet) and here:
+ [https://github.com/LessonStudio/VisualCryptography/blob/master/visual_cryptography.py](https://github.com/LessonStudio/VisualCryptography/blob/master/visual_cryptography.py)
 

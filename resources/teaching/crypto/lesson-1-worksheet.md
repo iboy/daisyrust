@@ -62,45 +62,128 @@ Can you work out how Alice can send the box and all it's contents so Bob can ope
 ## What's in the box? (10 minutes)##
 
 
-* Here is a cipher disk for everyone
-* A sealed envelope (do not open it yet)
-* A random pattern
+* A cipher disk for everyone
+* A sealed envelope (do not open it yet) with a wax seal.
+* A seemingly random pattern
 
 Take a very close look at the seal on the envelope.
 
-Open the envelope and see if you can piece together the clues to solve the original cipher:
+Open the envelope and see if you can piece together the clues to solve the original cipher-text:
 
-**ZNLQNL! ZNLQNL! ZNLQNL!**
-
-This is known as the *Caesar Cipher* or *Substitution Cipher* or *Shift Cipher*. It has lots of names.
+### **ZNLQNL! ZNLQNL! ZNLQNL!** ###
 
 
-## How does the 'visual cryptography' work (3 minutes)?
+## What are the random noise images? ##
+
+
+Open the envelop and you find another image that appears to be noise, printed on transparency film.
+
+Overlay this image (Image B) with the other image (Image A) printed on paper, and a hidden third image should appear.
+
+The image pair are a form of *visual* encryption. One image is a kind of 'key' for the other.
+
+**Clue:** The secret image hints at the setting for your Caesar Cipher disk. 
+
+Simple alphabetic *shifting* or offsetting by a number of letter places is known as the *Caesar Cipher*. It is also known as the *Substitution Cipher* or *Shift Cipher*. It has lots of names.
+
+If the Cipher disk is confusing to count and read: instead of thinking of the *Shift Cipher* as a circle, like it appears on our disk of two alphabets, think of it as a small table, like so:
+
+<img src="{{site.baseurl}}/resources/teaching/crypto/images/300px-ROT13.png" width="300" alt="Shift cipher and rot13 visualisation.">
+
+Draw one for yourself and de-encrypt the original message by looking up the encoded letters on the top row. Write down the corresponding letters on the bottom row.
+
+The shift of 13 is special and creates a very weak cipher called [ROT13](https://en.wikipedia.org/wiki/ROT13).
+
+
+## Plenary: Discuss the following questions (2-10 minutes, as time allows)##
+
+
+Describe how you solved the problem?
+
+Was it easy or hard? Too easy? Too hard?
+
+Does the combination of securities make the cipher-text any stronger?
+
+Why is the original encrypted message - the cypher text **ZNLQNL! ZNLQNL! ZNLQNL!** - *weak*?
+
+How can we make cipher algorithms *stronger*?
+
+What is 'frequency analysis'. It's a kind of *cryptanalysis* and can be used to *attack* encryption ciphers.
+
+What uses can you think of for such *visual cryptography*? 
+
+What is a digital signature?
+
+
+
+## How do the 'visual cryptography' images work? (3 minutes) ##
+
+|Original Image|Encoded Image A|Encoded Image B|
+|  ![Original Image](/resources/teaching/crypto/images/Code_Source.png) |  ![Encoded Image A](/resources/teaching/crypto/images/Code_Source_A.png) | ![Encoded Image B](/resources/teaching/crypto/images/Code_Source_B.png)  |
+
+
+
+
+
+
+
+  
+### How are these images made? ###
+
+
+One bitmap (black and white) image is processed into two complementary images - Encoded Image A and Image B. 
+
+Look closely, or zoom in , and you should see the pixel squares of the low-resolution (100x100 pixels) image.
+
+Every pixel in the original image (50x50) is checked and replaced by a four pixel pattern selected at random from a set of six patterns (doubling the size of the original image). If a pixel contains value, i.e. is black, you can think of it as a '1', if is white think of it as a '0'. In the second - encoded image B - the four pixel pattern is flipped when a black pixel is found. 
+
+The code to do this, below, isn't that complicated once you get your brain around it. 
+
+Therefore, there is a very subtle difference between image A and image B. When a flipped pattern is aligned with it's pair (using transparent film as in our example), the pixel combination make that 4x4 pixel group appear darker, replicating the tonal values of the original image.
 
 
 <img src="{{site.baseurl}}/resources/teaching/crypto/images/xor_overlay.png" width="400" alt="Xor Overlay">
 
 
+The image above represents the **boolean logic** of an exclusive-or operation (an XOR) and an image overlay similar to the patterns in the code sample, below.  
+
 <img src="{{site.baseurl}}/resources/teaching/crypto/images/enciphering_a_bitmap_.png" width="800" alt="Enciphering a bitmap">
 
-
-## Plenary: Discuss the following questions (2 minutes)##
-
-
-Why is the original encrypted message *weak*?
-
-How can we make cipher algorithms *stronger*?
-
-What can you use 'visual cryptography' for? 
+The image 'Enciphering a bitmap image' (above) contains an alternative description of a very similar process.
 
 
+## Summary ##
+
+We've experienced secure key exchange, seen several kind of 'keys' and types of encryption/decryption.
+The Caesar cipher, especially set to 13, is famously weak and insecure. It is easily attacked and solved using 'frequency analysis' or 'brute force'. For example, the common letters of the alphabet repeat more than than the rare one and looking for frequent repetition can hint at 'A's' or 'E's' and reveal the shift.  Or 'brute force': try all the 25 other possibilities. That's why our original secret had three repetitions of word and six repetitions of the common letter 'A' - to emphasise how patterns form in encrypted cipher-text and how this can be a weakness.
+
+So, what are the *keys* in real-world cryptography?
+
+They are often a pair of numbers, mathematically related. Remember the 'public' and 'private' keys mentioned above. These days, the keys are large numbers (several hundred digits long). Not like our two digit key '13' for the Caesar Cipher. The key numbers are used as parts of mathematical problems that take a long time to solve (even with super-computers) if all parts of the original formula are missing. A Long time = years to tens of years for a very fast computer (or set of computers).
 
 
-## Here's the python code (reference material)##
+
+
+
+## Further Explorations - Visual cryptography python code ##
+
+
+Here is the python script that produces two images. Separately they are more or less random noise. Together - totally aligned - they reveal the source image.
+
+See if you can follow the code - it is well commented.
+
+Spot where the randomising of the patterns happens.
+
+Spot the loop in a loop that steps through the X and Y pixel dimensions of the bit-map image. The code block in-the-loop in-the-loop repeats for every pixel in the images. This is called a 'per-pixel operation'.
+
+Find the condition in the for loop.
+
+See if you can spot the part where the X and Y pixel coordinates of the 4x4 pixel grid are walked through and assigned a value of 1 or 0 (black or white).
 
 If we have time we can talk through it. If not read the comments, they explain the process.
 
-  ```python
+  ```python 
+  #Code source: https://github.com/LessonStudio/VisualCryptography/blob/master/visual_cryptography.py
   #To run at command line type: 
   #
   #python /path/to/script/scriptName.py path/to/source/bitmap/image.png
@@ -125,10 +208,14 @@ If we have time we can talk through it. If not read the comments, they explain t
   import os, sys
   from random import SystemRandom
   random = SystemRandom()
-  #If you want to use the more powerful PyCrypto (pip install pycrypto) then uncomment the next line and comment out the previous two lines
+  #If you want to use the more powerful PyCrypto 
+  #(pip install pycrypto) then uncomment the next line 
+  #and comment out the previous two lines
   #from Crypto.Random import random
 
-  #Check if the script has the correct number of command line arguments 
+  #Check if the script has the correct number of command line arguments. 
+  #Scripts run on the command line python have 'arguments'. The first (in this case)
+  #is the script name itself, the second is the path to the source image. Hence: '2' below 
   if len(sys.argv)!=2:
   	print "This takes one argument; the image to be split."
   	exit()
@@ -155,7 +242,8 @@ If we have time we can talk through it. If not read the comments, they explain t
   draw_A = ImageDraw.Draw(out_image_A)
   draw_B = ImageDraw.Draw(out_image_B)
 
-  #There are 6(4 choose 2) possible patterns
+  #There are 6 possible patterns. The four digits represent
+  #4x4 pixel blocks
   #These relate to the xor and overlay diagrams above
   #For every black or white pixel in the original image
   #the loop below replaces them systematically with 
@@ -169,12 +257,12 @@ If we have time we can talk through it. If not read the comments, they explain t
   		pixel=img.getpixel((x,y))
   		pat=random.choice(patterns)
   		#A will always get the pattern
-  		draw_A.point((x*2, y*2), pat[0])
-  		draw_A.point((x*2+1, y*2), pat[1])
-  		draw_A.point((x*2, y*2+1), pat[2])
-  		draw_A.point((x*2+1, y*2+1), pat[3])
+  		draw_A.point((x*2, y*2), pat[0]) # pat[0] is the first digit in one of the sets above
+  		draw_A.point((x*2+1, y*2), pat[1]) # pat[1] is the second digit in one of the sets above
+  		draw_A.point((x*2, y*2+1), pat[2]) # pat[2] is the third digit in one of the sets above
+  		draw_A.point((x*2+1, y*2+1), pat[3]) # pat[4] is the fourth digit in one of the sets above
   		if pixel==0:#Dark pixel so B gets the anti pattern
-  			draw_B.point((x*2, y*2), 1-pat[0])
+  			draw_B.point((x*2, y*2), 1-pat[0]) #The minus here effectively 'inverts' the pattern
   			draw_B.point((x*2+1, y*2), 1-pat[1])
   			draw_B.point((x*2, y*2+1), 1-pat[2])
   			draw_B.point((x*2+1, y*2+1), 1-pat[3])
@@ -196,11 +284,18 @@ Alone or with help, see if you can get the python code working.
 
 Discuss and discover: How do we use mathematics to make stronger encryption?
 
+Is the maths really complicated? Or a combination of things we already know, expressed in a different way?
+
 See: 
 
-* factorisation
+* integer factorisation
 * prime numbers
 * modular (or clock) arithmetic;
-* randomness
+* randomness.
+
+List some of the names of other encryption methods, other than the Caesar cipher we have met?
+
+As a start check out: RSA, the Diffie-Hellman key exchange; WEP, WEP2, for example. The descriptions get maths heavy quite quickly. Try to scan through the complicated stuff!
+
 
 

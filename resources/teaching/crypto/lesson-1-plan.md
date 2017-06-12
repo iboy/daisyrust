@@ -12,7 +12,7 @@ Short Summary
 
 ##  Guides ##
 
-Here is some background information about an introduction to cryptography (encryption, decryption ) and the key exchange problem:
+Further material and introduction to cryptography, encryption, decryption, ciphers and the key exchange problem:
 
 The Key Exchange Problem
 [https://www.youtube.com/watch?v=U62S8SchxX4](https://www.youtube.com/watch?v=U62S8SchxX4)
@@ -23,6 +23,38 @@ Alice and Bob and all
 
 Visual Cryptography
 [https://www.cl.cam.ac.uk/~fms27/vck/vck-poster.pdf](https://www.cl.cam.ac.uk/~fms27/vck/vck-poster.pdf)
+
+Public Key Cryptography - Computerphile
+[https://www.youtube.com/watch?v=GSIDS_lvRv4](https://www.youtube.com/watch?v=GSIDS_lvRv4)
+
+
+Public Key Encryption
+[http://csunplugged.org/public-key-encryption/#Related_Resources](http://csunplugged.org/public-key-encryption/#Related_Resources)
+
+
+Journey into Cryptography - Khan Academy
+[https://www.khanacademy.org/computing/computer-science/cryptography#random-algorithms-probability](https://www.khanacademy.org/computing/computer-science/cryptography#random-algorithms-probability)
+
+
+ROT13 - Wikipedia
+[https://en.wikipedia.org/wiki/ROT13](https://en.wikipedia.org/wiki/ROT13)
+
+
+Xor - Wikipedia
+[https://en.wikipedia.org/wiki/Exclusive_or](https://en.wikipedia.org/wiki/Exclusive_or)
+
+
+GCHQ - Cryptoy
+[https://www.gchq.gov.uk/features/cryptoy-explore-fascinating-world-cryptography](https://www.gchq.gov.uk/features/cryptoy-explore-fascinating-world-cryptography)
+
+
+Frank Tapson - Public Key Cryptography
+[http://www.cimt.org.uk/resources/topics/art003.pdf](http://www.cimt.org.uk/resources/topics/art003.pdf)
+
+**Updated:** June 2017
+
+
+
 
 ## Learning Objectives ##
 
